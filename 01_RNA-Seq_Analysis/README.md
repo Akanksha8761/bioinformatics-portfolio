@@ -17,7 +17,7 @@ The goal is to provide a clear understanding of not just *how* to run the analys
     *   [1.5 The Transcriptome: A Dynamic Snapshot of the Cell](#15-the-transcriptome-a-dynamic-snapshot-of-the-cell)
     *   [1.6 Why We Need RNA-Seq: The Evolution of a Technique](#16-why-we-need-rna-seq-the-evolution-of-a-technique)
     *   [1.7 The Basic RNA-Seq Workflow](#17-the-basic-rna-seq-workflow)
-*   [Chapter 2: Experimental Design & Data Acquisition](./docs/02_Experimental_Design.md) *(Coming Soon)*
+*   [Chapter 2: Experimental Design & Data Acquisition](./02_Data_Acquisition.md) 
 *   [Chapter 3: Quality Control of Raw Data](./docs/03_Quality_Control.md) *(Coming Soon)*
 
 ---
