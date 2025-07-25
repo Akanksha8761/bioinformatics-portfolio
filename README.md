@@ -49,6 +49,8 @@ I have hands-on experience building and deploying web-based bioinformatics tools
 
 | Server Name                                                    | Description                                                                                   | Status / Link                                                                |
 | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **CritiCal-C**                                                   | A web-server for Detecting critical cytosines in gene regulation.  | [**Live Server**](https://hichicob.ihbt.res.in/critical/)                       |
+
 | **CTF-BIND**                                                   | A web-server for analyzing transcriptional regulatory switches in plants under abiotic stress.  | [**Live Server**](http://hichicob.ihbt.res.in/ctfbind/)                       |
 | **PTF-Vac**                                                    | Ab-initio discovery of plant TFBS using explainable and generative deep co-learning models.   | [**Live Server**](https://scbb.ihbt.res.in/PTF-Vac/index.php)                |
 
