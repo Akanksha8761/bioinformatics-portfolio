@@ -1,79 +1,118 @@
-# Tutorial: A Beginner's Guide to RNA-Seq Analysis
+# Project 1: RNA-Seq Analysis Pipeline - A Beginner's Guide
 
-### Project Objective
-This project serves as a complete, end-to-end tutorial for performing a standard differential gene expression (DGE) analysis using RNA-Seq data. We will start with raw sequencing reads (FASTQ files) and proceed through quality control, alignment, quantification, and statistical analysis to identify genes that are differentially expressed between two conditions.
+### Objective
+This project serves as a complete, hands-on tutorial for performing a differential gene expression analysis using RNA sequencing (RNA-Seq) data. It is designed for beginners, starting with the fundamental biological principles and progressing through each step of a standard bioinformatics workflow.
 
----
-
-## Part 1: The Fundamentals - What is RNA-Seq and Why is it Essential?
-
-Before we type a single command, it's crucial to understand the biological question we are trying to answer and the technology that allows us to do so.
-
-### From Genome to Function: The Central Dogma
-
-Every cell in an organism contains the same set of genes, encoded in its DNA. This collection of genes is called the **genome**. Think of the genome as a massive instruction manual or a library containing every book the cell could ever need.
-
-However, a skin cell is vastly different from a brain cell, despite having the same genome. This is because different cells "read" or **express** different sets of genes at different times. The process by which the information in a gene is used to create a functional product, like a protein, is described by the **Central Dogma of Molecular Biology**:
-
-**DNA → (Transcription) → RNA → (Translation) → Protein**
-
-The key intermediate step here is **RNA** (Ribonucleic Acid). When a gene is "turned on," its DNA sequence is transcribed into an RNA molecule. This RNA molecule then carries the instructions to the cell's machinery to build a protein.
-
-### Introducing the Transcriptome: The Cell's Active Blueprint
-
-If the genome is the entire library, the **transcriptome** is the specific set of books that are currently checked out and being read by the cell *at this very moment*.
-
-> **The Transcriptome is the complete set of all RNA transcripts in a cell under a specific set of conditions.**
-
-Unlike the genome, which is mostly static, the transcriptome is incredibly **dynamic**. It changes constantly in response to:
-*   Developmental stage (e.g., embryo vs. adult)
-*   Cell type (e.g., neuron vs. muscle cell)
-*   Environmental signals (e.g., heat shock, nutrient availability)
-*   Disease (e.g., cancer vs. healthy tissue)
-
-By studying the transcriptome, we get a snapshot of which genes are active in a cell at a particular time, which gives us a direct look into the cell's function and state.
-
-
-*(Image: A simple illustration of how different cell types use the same genome to create different transcriptomes.)*
-
-### RNA-Seq: A Revolution in Reading the Transcriptome
-
-So, how do we measure the transcriptome? This is where **RNA-Seq (RNA Sequencing)** comes in.
-
-> **RNA-Seq is a high-throughput sequencing technology that allows us to determine the presence and quantity of every RNA molecule in a biological sample.**
-
-The process, in a nutshell, is:
-1.  Extract all the RNA from a sample of cells.
-2.  Convert the RNA molecules back into a more stable DNA form (called cDNA).
-3.  Use Next-Generation Sequencing (NGS) machines to read the sequences of millions of these cDNA fragments.
-4.  The output is a massive text file (usually a `FASTQ` file) containing millions of short "reads," which are fragments of the original RNA sequences.
-
-By counting how many reads correspond to each gene, we can get a precise measurement of that gene's activity or **expression level**. A gene with 10,000 reads is much more active than a gene with only 10 reads.
-
-### Why Do We Need RNA-Seq? The Biological Questions We Can Answer
-
-RNA-Seq is not just one technique; it's a versatile tool that can answer a wide range of fundamental biological questions.
-
-**1. Differential Gene Expression (DGE) - The Most Common Application**
-This is the core of our tutorial. DGE analysis identifies which genes are expressed at significantly different levels between two or more conditions.
-*   **Classic Question:** "Which genes are upregulated in a cancer tumor compared to a healthy tissue sample from the same patient?"
-*   **Application:** Identifying genes that drive cancer progression, which can become targets for new drugs.
-
-**2. Discovery of Novel Transcripts**
-The "instruction manuals" (genomes) for many organisms are not yet perfectly annotated. RNA-Seq allows us to discover previously unknown genes, including non-coding RNAs, and to identify new variants of existing genes.
-*   **Classic Question:** "Are there any unannotated genes that are expressed only during early embryonic development?"
-*   **Application:** Improving our fundamental understanding of the genome.
-
-**3. Alternative Splicing Analysis**
-A single gene can often produce multiple different RNA molecules (and thus multiple different proteins) through a process called alternative splicing. RNA-Seq can detect and quantify these different versions, known as **isoforms**.
-*   **Classic Question:** "Does my drug treatment cause a shift in which protein isoforms are produced from a key signaling gene?"
-*   **Application:** Understanding the complex layers of gene regulation that contribute to disease.
-
-**4. Functional Enrichment & Pathway Analysis**
-Once you have a list of differentially expressed genes, the next question is: "What do these genes *do*?" By looking at which biological pathways (e.g., "metabolism," "immune response") are over-represented in your gene list, you can infer the biological processes that are changing between your conditions.
-*   **Classic Question:** "My list of 500 downregulated genes seems random. Is there a common biological function that connects them?"
-*   **Application:** Moving from a simple list of genes to a coherent biological story.
+The goal is to provide a clear understanding of not just *how* to run the analysis, but *why* each step is crucial for generating meaningful biological insights.
 
 ---
 
-Now that we understand the 'what' and the 'why', we can move on to the 'how'. In the next part, we will outline the standard computational workflow for an RNA-Seq analysis.
+### Table of Contents
+
+*   [Chapter 1: From DNA to Data - The "Why" of RNA-Seq](#chapter-1-from-dna-to-data---the-why-of-rna-seq)
+    *   [1.1 The Central Dogma: Life's Information Highway](#11-the-central-dogma-lifes-information-highway)
+    *   [1.2 A Closer Look at DNA and RNA](#12-a-closer-look-at-dna-and-rna)
+    *   [1.3 Transcription: Creating the RNA Message](#13-transcription-creating-the-rna-message)
+    *   [1.4 RNA Processing: From Draft to Final Copy](#14-rna-processing-from-draft-to-final-copy)
+    *   [1.5 The Transcriptome: A Dynamic Snapshot of the Cell](#15-the-transcriptome-a-dynamic-snapshot-of-the-cell)
+    *   [1.6 Why We Need RNA-Seq: The Evolution of a Technique](#16-why-we-need-rna-seq-the-evolution-of-a-technique)
+    *   [1.7 The Basic RNA-Seq Workflow](#17-the-basic-rna-seq-workflow)
+*   [Chapter 2: Experimental Design & Data Acquisition](./docs/02_Experimental_Design.md) *(Coming Soon)*
+*   [Chapter 3: Quality Control of Raw Data](./docs/03_Quality_Control.md) *(Coming Soon)*
+
+---
+
+## Chapter 1: From DNA to Data - The "Why" of RNA-Seq
+
+Before we analyze RNA data, we must understand what RNA is and where it comes from. This chapter lays the biological groundwork for everything that follows.
+
+### 1.1 The Central Dogma: Life's Information Highway
+
+At its core, biology is about information. The flow of this information is described by the **Central Dogma of Molecular Biology**.
+
+Think of it as a one-way street for genetic information:
+-   **DNA (Deoxyribonucleic acid)** is the master blueprint containing all instructions to build and operate an organism. It's stored safely in the cell's nucleus.
+-   **RNA (Ribonucleic acid)** is a temporary, working copy of a specific instruction from the DNA blueprint.
+-   **Proteins** are the "workers" or "machines" that carry out the instructions, performing virtually all tasks within a cell.
+
+> **Why this matters:** A cell doesn't use all its instructions at once. By measuring which RNA copies are being made, we get a snapshot of which genes are "active." This is the entire premise of RNA-Seq.
+
+### 1.2 A Closer Look at DNA and RNA
+
+DNA and RNA are both **nucleic acids**, long chains of repeating units called **nucleotides**. The key differences are summarized below:
+
+| Feature         | DNA (The Blueprint)                                     | RNA (The Working Copy)                                  |
+| --------------- | ------------------------------------------------------- | ------------------------------------------------------- |
+| **Structure**   | Double Helix (like a twisted ladder)                    | Usually Single-Stranded                                 |
+| **Sugar**       | Deoxyribose                                             | Ribose                                                  |
+| **Bases**       | Adenine (A), **Thymine (T)**, Guanine (G), Cytosine (C) | Adenine (A), **Uracil (U)**, Guanine (G), Cytosine (C) |
+| **Stability**   | Very stable, long-term storage                          | Less stable, short-term message                         |
+| **Pairing Rule**| `A` pairs with `T` <br> `G` pairs with `C`             | `A` pairs with `U` <br> `G` pairs with `C`             |
+
+### 1.3 Transcription: Creating the RNA Message
+
+Transcription is the process of making an RNA copy from a DNA template, performed by an enzyme called **RNA polymerase**.
+
+#### Phase 1: Initiation
+1.  **Finding the Start:** Helper proteins called **transcription factors** bind to a **promoter** region on the DNA, which acts as a "start here" sign for a gene.
+2.  **Recruiting the Enzyme:** These factors recruit RNA polymerase to the promoter.
+3.  **Unwinding DNA:** The polymerase unwinds a small section of the DNA double helix, creating a "transcription bubble."
+
+#### Phase 2: Elongation
+1.  **Reading the Template:** RNA polymerase moves along the DNA template strand, reading the bases.
+2.  **Building the Copy:** For each DNA base it reads, it adds the matching RNA nucleotide (`A` with `U`, `G` with `C`) to the growing RNA chain.
+3.  **Moving Forward:** The polymerase continues down the gene, unwinding DNA in front of it and rewinding it from behind.
+
+#### Phase 3: Termination
+1.  **Reaching the End:** The polymerase reaches a "stop" signal in the DNA sequence.
+2.  **Releasing the Copy:** The newly made RNA transcript is released, and the polymerase detaches.
+
+The result is a **pre-mRNA** molecule. In eukaryotes, this rough draft needs further editing.
+
+### 1.4 RNA Processing: From Draft to Final Copy
+
+In organisms like humans, mice, and plants, the pre-mRNA transcript is edited through **RNA processing** inside the nucleus.
+
+1.  **Splicing:** Genes contain coding regions (**exons**) and non-coding regions (**introns**). Splicing removes the introns and joins the exons together.
+    > **Analogy:** Imagine a recipe with advertisements mixed in. Splicing removes the ads (introns) so you're left with only the useful cooking instructions (exons).
+
+2.  **5' Capping:** A special cap is added to the "front" (5' end) of the RNA. This protects the RNA from degradation and helps the cell's protein-making machinery (the ribosome) to recognize it.
+
+3.  **3' Polyadenylation:** A long tail of adenine bases (a **poly-A tail**) is added to the "back" (3' end). This tail adds stability and helps export the RNA from the nucleus.
+
+After these steps, the pre-mRNA becomes a **mature mRNA** (messenger RNA), ready for its job.
+
+### 1.5 The Transcriptome: A Dynamic Snapshot of the Cell
+
+The **genome** is the complete, static set of DNA in an organism.
+
+The **transcriptome**, however, is the complete set of all RNA molecules in a cell at a specific moment. It is incredibly dynamic and changes based on cell type, developmental stage, or response to stimuli (like disease or drugs).
+
+> **Why RNA-Seq is powerful:** By sequencing the transcriptome, we capture a dynamic snapshot of what the cell is actively *doing*. This tells us which genes are important for a specific condition.
+
+### 1.6 Why We Need RNA-Seq: The Evolution of a Technique
+
+Before RNA-Seq, scientists used other methods with key limitations:
+-   **RT-PCR:** Measures only one or a few known genes at a time.
+-   **Microarrays:** Measures thousands of known genes but cannot discover new ones.
+
+**RNA-Seq revolutionized the field with key advantages:**
+
+-   **Unbiased Discovery:** It sequences *all* RNA, allowing you to discover brand new genes and splice variants.
+-   **High Dynamic Range:** It accurately measures both very lowly and very highly expressed genes.
+-   **Comprehensive Information:** It can detect expression levels, genetic variations (SNVs), gene fusions, and alternative splicing patterns.
+
+### 1.7 The Basic RNA-Seq Workflow
+
+All RNA-Seq experiments follow a similar high-level path:
+
+1.  **RNA Extraction:** Isolate RNA from biological samples (cells, tissue).
+2.  **Library Preparation:** Convert the fragile RNA into more stable, sequence-able DNA (called cDNA), fragment it, and add special "adapter" sequences.
+3.  **Sequencing:** Load the library onto a Next-Generation Sequencing (NGS) machine, which generates millions of short sequence "reads."
+4.  **Data Analysis (Our Focus):**
+    -   Check the quality of the raw reads.
+    -   Align reads to a reference genome.
+    -   **Quantify** how many reads map to each gene.
+    -   Perform statistical analysis to find **differentially expressed genes**.
+
+With this foundation, you are now ready to dive into the practical aspects of an RNA-Seq experiment. In the next chapter, we will discuss how to properly design an experiment to ensure your results are statistically sound and biologically meaningful.
