@@ -143,8 +143,8 @@ Save the file and make it executable. Then, run it.
 Generated bash
 chmod +x download_data.sh
 ./download_data.sh
-
-Pro Tip: Use screen or tmux
+```
+**Pro Tip:** Use screen or tmux
 These downloads can take a long time and require a stable internet connection. If you are working on a remote server, it is highly recommended to run the download script inside a screen or tmux session. This allows the process to continue running even if you get disconnected.
 
 After the script finishes, you will have 12 files in your raw_fastq directory (2 for each of the 6 samples), for example:
@@ -155,6 +155,6 @@ SRR8757537_2.fastq.gz
 
 ...and so on.
 
-Congratulations! You have successfully identified, evaluated, and downloaded a real-world RNA-Seq dataset. You now have the raw material for our analysis.
+**Congratulations! You have successfully identified, evaluated, and downloaded a real-world RNA-Seq dataset. You now have the raw material for our analysis.**
 
-Next Step: In the next chapter, we will perform a critical Quality Control (QC) check on these raw FASTQ files to ensure they are suitable for analysis.
+**Next Step:** In the next chapter, we will perform a critical Quality Control (QC) check on these raw FASTQ files to ensure they are suitable for analysis.
