@@ -1,22 +1,17 @@
 # Chapter 2: Finding and Acquiring Your Data
 
-In Chapter 1, we covered the biological theory behind RNA-Seq. Now, we move from theory to practice. Most bioinformatics research involves analyzing publicly available data. This chapter will teach you how to find, evaluate, and download a real-world dataset for our tutorial.
+In Chapter 1, we covered the biological theory behind RNA-Seq. Now, we move from theory to practice. Most bioinformatics research involves analyzing publicly available data. This chapter will teach you how to find, evaluate, and download a dataset for our tutorial.
 
 ### 2.1 A Global Library: Public Sequencing Repositories
 
-When researchers publish a study using sequencing data, they are required to deposit their raw data into a public database. This is a cornerstone of reproducible science. The two most important repositories are:
-
-*   **NCBI Gene Expression Omnibus (GEO):** A database focused on functional genomics data, excellent for browsing experiments by publication or biological context.
-*   **European Nucleotide Archive (ENA):** A comprehensive repository for all nucleotide sequence data.
-
-These databases, along with the DNA Data Bank of Japan (DDBJ), synchronize their data. A project submitted to one will be accessible through the others. We will use GEO and its connected **Sequence Read Archive (SRA)** for our example.
+When researchers publish a study, they deposit their raw data into public databases like the **NCBI Gene Expression Omnibus (GEO)** or the **European Nucleotide Archive (ENA)**. These archives are treasure troves of data for your own research.
 
 ### 2.2 The Art of Searching for Data
 
-Finding the right dataset is a critical skill. Your search should always be guided by your biological question.
+Finding the right dataset is a skill. Your search should be guided by your biological question.
 
-1.  **Brainstorm Keywords:** Think about the key components of a potential experiment (e.g., organism, disease, technology, cell type).
-2.  **Combine Keywords:** Use Boolean operators (`AND`, `OR`) to refine your search on the [NCBI GEO Datasets](https://www.ncbi.nlm.nih.gov/gds) website. For example: `("Homo sapiens"[Organism]) AND ("prostate cancer"[MeSH Terms]) AND ("Expression profiling by high throughput sequencing"[DataSet Type])`
+1.  **Brainstorm Keywords:** Think about the key components of an experiment (e.g., organism, disease, technology, cell type).
+2.  **Combine Keywords:** Use Boolean operators (`AND`, `OR`) on the [NCBI GEO Datasets](https://www.ncbi.nlm.nih.gov/gds) website to refine your search.
 
 ### 2.3 The Quality Checklist: How to Evaluate a Dataset
 
@@ -25,18 +20,49 @@ Before you commit to a dataset, perform a quick quality check:
 1.  **✅ Clear Objective:** Is the biological question clearly stated?
 2.  **✅ Sound Experimental Design:** Is it a clean comparison (e.g., Treatment vs. Control)?
 3.  **✅ Sufficient Replicates:** Are there at least **3 biological replicates** per condition? This is non-negotiable for statistical power.
-4.  **✅ Correct Technology:** Is it short-read (Illumina) paired-end data? Paired-end is generally preferred for better alignment.
+4.  **✅ Sequencing Strategy:** Is the data **Paired-End** or **Single-End**? (More on this below).
 5.  **✅ Relevant Organism:** Is a high-quality reference genome available?
+### 2.4 Single-End vs. Paired-End Reads: A Critical Distinction
 
-### 2.4 Case Study: Deconstructing Project PRJNA526724
+When evaluating a dataset, the sequencing strategy is one of the most important technical details. During library preparation, the RNA (converted to cDNA) is fragmented into small pieces. The sequencer then reads these fragments. The choice is whether to read from one end or both.
+Use code with caution.
+Markdown
+Single-End (SE): Reads only one end of a fragment
+<--Read 1-- [ DNA Fragment ]
 
-Let's apply our checklist to the project we'll be using for this tutorial.
+Paired-End (PE): Reads both ends of the same fragment
+<--Read 1-- [ Insert Size ] --Read 2-->
+
+Generated code
+#### Single-End (SE) Sequencing
+-   **What it is:** For each DNA fragment, the sequencer performs only one read, starting from one end.
+-   **Output:** Generates a single FASTQ file per sample (e.g., `SRRXXXXXX.fastq.gz`).
+
+#### Paired-End (PE) Sequencing
+-   **What it is:** For each DNA fragment, the sequencer reads from **both** ends, generating two reads per fragment. These are called "read 1" and "read 2".
+-   **Output:** Generates **two** FASTQ files per sample (e.g., `SRRXXXXXX_1.fastq.gz` and `SRRXXXXXX_2.fastq.gz`).
+-   **Key Advantage:** Because you know the two reads came from the same fragment, you have more information. This greatly improves the accuracy of read alignment, especially in repetitive regions of the genome. The distance between the two reads (the "insert size") is also valuable information.
+
+#### Comparison and When to Use Which
+
+| Feature                     | Single-End (SE)                                          | Paired-End (PE)                                              |
+| --------------------------- | -------------------------------------------------------- | ------------------------------------------------------------ |
+| **Primary Use**             | Gene expression counting (quantification)                | **The modern standard for most RNA-Seq**                         |
+| **Cost & Data**             | Cheaper, less data per sample                            | More expensive, more data per sample                         |
+| **Alignment Confidence**    | Good, but can struggle with repetitive regions.        | **Excellent**, as the read pair helps anchor the alignment.    |
+| **Splicing & Isoform Analysis** | Limited ability to identify novel splice junctions.        | **Superior** for detecting alternative splicing and isoforms. |
+| **Gene Fusion Detection**   | Very difficult.                                        | **Possible**, as read pairs can map to two different genes.    |
+
+> **The Verdict:**
+> -   **Choose Single-End if:** Your primary goal is simple differential gene expression, your budget is tight, or you are working with highly degraded RNA where fragments are too short for paired-end reading.
+> -   **Choose Paired-End if:** You want to perform almost any standard RNA-Seq analysis today. It is **essential** for studying alternative splicing, discovering novel transcripts, detecting gene fusions, and achieving the most accurate alignment and quantification. **For this tutorial and for most PhD-level work, you should strongly prefer Paired-End data.**
+
+### 2.5 Case Study: Deconstructing Project PRJNA526724
+
+Let's apply our full checklist to our tutorial project.
 
 *   **Project Link:** [PRJNA526724 on NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA526724)
-*   **Title:** *Transcriptome of human prostate cancer cells*
-*   **Design:** *RNA was harvested... to study the basal transcriptome of LNCaP and 22rv1 cells...*
-
-**Evaluation:** This project is a perfect fit. It's a clear comparison between two human prostate cancer cell lines (`LNCaP` vs. `22Rv1`) with multiple paired-end samples, allowing us to select three replicates for each condition.
+*   **Evaluation:** This project is a perfect fit. It's a clear comparison between two human prostate cancer cell lines (`LNCaP` vs. `22Rv1`). Most importantly, when we look at the SRA Run Selector, the "Layout" column clearly states **PAIRED**, confirming it uses the more powerful paired-end strategy.
 
 ### 2.5 Let's Get the Data: An Efficient and Robust Workflow
 
