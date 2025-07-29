@@ -39,7 +39,7 @@ This repository contains detailed examples of my work. Each project includes a d
 | [**1. RNA-Seq Analysis Pipeline**](./01_RNA-Seq_Analysis/)         | `RNA-Seq`, `DESeq2`, `STAR`, `FastQC`, `Shell Scripting`, `R`     | A complete differential gene expression analysis pipeline, from raw FASTQ QC and alignment to functional annotation. |
 | [**2. Variant Analysis in a Rare Disease**](./02_Variant_Analysis_EB/) | `Variant Interpretation`, `VCF`, `SIFT`, `PolyPhen2`, `DynaMut`   | An analysis of missense mutations in *KRT5*/*KRT14* genes to understand their role in Epidermolysis Bullosa Simplex. *(Basis for my publication)* |
 | [**3. De Novo Genome Assembly**](./03_DeNovo_Assembly/)            | `De Novo Assembly`, `Genome Annotation`, `FastQC`, `GeneMark`     | Assembly and annotation of four isolates of *Neisseria sicca* from raw next-generation sequencing reads.    |
-| [**4. Machine Learning for Genomics**](./04_ML_Genomics/)             | `Python`, `Scikit-learn`, `TensorFlow`, `Knowledge Graphs` | *(Work in progress)* Applying ML models for classification and prediction tasks on genomic datasets. |
+| [**4. Machine Learning for Genomics**](./04_ML_Genomics/)             | `Python`, `Scikit-learn`, `TensorFlow`, `Knowledge Graphs` | Applying ML models for classification and prediction tasks on genomic datasets. |
 
 ---
 
