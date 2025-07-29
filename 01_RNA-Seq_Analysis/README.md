@@ -27,8 +27,9 @@ Think of it as a one-way street for genetic information:
 -   **DNA (Deoxyribonucleic acid)** is the master blueprint containing all instructions to build and operate an organism. It's stored safely in the cell's nucleus.
 -   **RNA (Ribonucleic acid)** is a temporary, working copy of a specific instruction from the DNA blueprint.
 -   **Proteins** are the "workers" or "machines" that carry out the instructions, performing virtually all tasks within a cell.
+<img width="3542" height="1617" alt="central_dogma" src="https://github.com/user-attachments/assets/b26a3e10-a40a-4728-99fc-a16e4659b8c2" />
+Created in  https://BioRender.com
 
-  DNA ----[Transcription]----> RNA ----[Translation]----> Protein
 
 -   **DNA (Deoxyribonucleic acid)** is the master blueprint.
 -   **RNA (Ribonucleic acid)** is a temporary, working copy of a specific instruction.
