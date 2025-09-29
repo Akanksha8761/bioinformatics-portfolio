@@ -59,9 +59,9 @@ I have hands-on experience building and deploying web-based bioinformatics tools
 
 1.  **Sharma, A.**, & Singh, R. (2023). “Deciphering the role of missense mutations in Epidermolysis Bullosa Simplex”. *Journal of Computational Biology and Bioinformatics Research, 12*(1), 1-10. [DOI: 10.5897/JCBBR2023.0135](https://doi.org/10.5897/JCBBR2023.0135)
 2.  Kesarwani, V., Kumar, A., **Sharma, A.**, Gupta, S., & Shankar, R. (2025). "Deep-Learning on condition specific expression profiles reveal critical cytosines in gene regulation". *bioRxiv* (Preprint). [DOI: 10.1101/2025.06.01.657178](https://doi.org/10.1101/2025.06.01.657178)
-3.  Gupta, S., Jyoti, Bhati, U., Kesarwani, V., **Sharma, A.**, & Shankar, R. “PTF-Vac: Ab-initio discovery of plant transcription factors binding sites using explainable and generative deep co-learning encoders-decoders”. *(Under communication)*
+3.  Gupta, S., Jyoti, Bhati, U., Kesarwani, V., **Sharma, A.**, & Shankar, R. “PTF-Vac: Ab-initio discovery of plant transcription factors binding sites using explainable and generative deep co-learning encoders-decoders”. *(Plant communication)*
 4.  Gupta, S.S., **Sharma, A.**, Shankar, R., & Sharma, U. “Computational Exploration Unveils Novel Class of Potential Leads Against SARS-CoV-2 from an In-House Library.” *(Under communication)*
-5.  Bhati, U., **Sharma, A.**, Gupta, S., Rana, A., & Shankar, R. “CTF-BIND: Unraveling the causality of Abiotic stress in plants in association with transcriptional regulatory switch”. *(Under communication)*
+5.  Bhati, U., **Sharma, A.**, Gupta, S., Rana, A., & Shankar, R. (2025). “Decoding stress specific transcriptional regulation by causality aware Graph-Transformer deep learning". *Current Plant Biology, 43*, 100521. [[DOI: 10.1016/j.cpb.2025.100521](https://doi.org/10.1016/j.cpb.2025.100521)]
 
 ---
 
