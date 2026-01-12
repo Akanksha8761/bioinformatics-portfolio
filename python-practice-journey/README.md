@@ -35,7 +35,7 @@ python-practice-journey/
 | Day | Topic | Challenge | Status |
 |-----|-------|-----------|--------|
 | [Day 1](./day-01/) | List Comprehensions & String Methods | Clean & Filter User Tags | ✅ Completed |
-| Day 2 | - | - | 📝 Upcoming |
+| [Day 2](./day-02/) | Dictionaries & Counter | Word Frequency Counter | ✅ Completed |
 | Day 3 | - | - | 📝 Upcoming |
 | Day 4 | - | - | 📝 Upcoming |
 | Day 5 | - | - | 📝 Upcoming |
@@ -76,6 +76,14 @@ python solution.py
 - ✅ Conditional filtering in comprehensions
 - ✅ Using `set()` for removing duplicates
 
+### Day 2
+- ✅ Dictionary `.get()` method for safe key access
+- ✅ `Counter` class from collections module
+- ✅ String translation with `.translate()` and `.maketrans()`
+- ✅ Text preprocessing and cleaning
+- ✅ `defaultdict` for automatic default values
+- ✅ Regular expressions for pattern matching
+
 ## 🛠️ Technologies & Tools
 
 - **Language:** Python 3.x
@@ -106,7 +114,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Last Updated:** Day 1  
+**Last Updated:** Day 2  
 **Current Focus:** Python Fundamentals  
 **Next Topic:** TBD
 
