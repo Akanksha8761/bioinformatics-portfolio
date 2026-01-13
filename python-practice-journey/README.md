@@ -1,128 +1,107 @@
-# 🐍 Python Practice Journey: Beginner to Advanced
+# 🐍 Python Journey: From Basics to AI/ML
 
-Welcome to my Python learning repository! This is a documented journey from beginner to advanced Python programming, with daily challenges and solutions.
+Welcome to my Python learning journey! This repository documents my progress from Python fundamentals to advanced AI/ML concepts.
 
 ## 📚 About This Repository
 
-This repository contains my daily Python practice exercises, starting from fundamental concepts and progressively advancing to more complex topics. Each day focuses on specific Python concepts with practical challenges and solutions.
+This is a personal learning log where I track my daily progress, code exercises, and projects as I advance from Python basics to artificial intelligence and machine learning.
 
-## 🎯 Learning Goals
+**Started:** January 2025  
+**Goal:** Master Python and become proficient in AI/ML
 
-- Master Python fundamentals
-- Develop problem-solving skills
-- Learn Pythonic coding patterns
-- Build a portfolio of practical examples
-- Progress from beginner to advanced level
+## 🗺️ Learning Roadmap
+
+### Phase 1: Python Fundamentals ✅ (In Progress)
+- [x] Day 1: Data Types, Variables, and Type Conversion
+- [ ] Control Flow (if/else, loops)
+- [ ] Functions and Modules
+- [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
+- [ ] File Handling
+- [ ] Exception Handling
+- [ ] Object-Oriented Programming (OOP)
+
+### Phase 2: Intermediate Python
+- [ ] Decorators and Generators
+- [ ] List Comprehensions
+- [ ] Lambda Functions
+- [ ] Regular Expressions
+- [ ] Working with APIs
+- [ ] Virtual Environments
+
+### Phase 3: Data Analysis & Visualization
+- [ ] NumPy
+- [ ] Pandas
+- [ ] Matplotlib & Seaborn
+- [ ] Data Cleaning & Preprocessing
+
+### Phase 4: Machine Learning Basics
+- [ ] Scikit-learn
+- [ ] Supervised Learning (Regression, Classification)
+- [ ] Unsupervised Learning (Clustering, Dimensionality Reduction)
+- [ ] Model Evaluation & Validation
+
+### Phase 5: Deep Learning & AI
+- [ ] Neural Networks Fundamentals
+- [ ] TensorFlow/Keras or PyTorch
+- [ ] Computer Vision
+- [ ] Natural Language Processing (NLP)
+- [ ] Advanced AI Techniques
 
 ## 📂 Repository Structure
 
 ```
-python-practice-journey/
-│
-├── README.md                 # This file
-├── day-01/                   # Day 1: List Comprehensions & String Methods
-│   ├── README.md            # Daily challenge description
-│   └── solution.py          # Solution code
-├── day-02/                   # Coming soon...
-├── day-03/                   # Coming soon...
-└── ...
+python-journey-to-ai-ml/
+├── README.md
+├── Day-01-Data-Types-and-Variables/
+│   ├── notes.md
+│   ├── exercises.py
+│   └── concepts.md
+├── Day-02-.../
+└── projects/
 ```
 
-## 📅 Daily Progress
+## 🚀 Daily Progress
 
-### Week 1: Python Fundamentals
+### Day 1: Data Types, Variables, and Type Conversion
+**Date:** January 13, 2026
 
-| Day | Topic | Challenge | Status |
-|-----|-------|-----------|--------|
-| [Day 1](./day-01/) | List Comprehensions & String Methods | Clean & Filter User Tags | ✅ Completed |
-| [Day 2](./day-02/) | Dictionaries & Counter | Word Frequency Counter | ✅ Completed |
-| [Day 3](./day-03/) | Sorting & Lambda Functions | Student Ranking System | ✅ Completed |
-| Day 4 | - | - | 📝 Upcoming |
-| Day 5 | - | - | 📝 Upcoming |
-| Day 6 | - | - | 📝 Upcoming |
-| Day 7 | - | - | 📝 Upcoming |
+**Topics Covered:**
+- Python data types (int, float, string, boolean, None)
+- Print function and f-strings
+- Type checking with `type()`
+- Dynamic typing
+- Type conversion/casting
+- User input with `input()`
 
-## 🚀 Getting Started
+**Key Takeaways:**
+- Python is dynamically typed - variables can change types
+- F-strings are the modern way to format strings in Python
+- `input()` always returns a string, requiring conversion for numbers
+- Type conversion is explicit using `int()`, `float()`, `str()`, `bool()`
 
-### Prerequisites
+**Exercises Completed:** 8 tasks covering personal details, product info, temperature conversion, string manipulation, user input, boolean flags, and type reassignment.
 
-- Python 3.x installed on your system
-- Basic understanding of programming concepts
+[View Day 1 Details →](./Day-01-Data-Types-and-Variables/)
 
-### Running the Code
+## 💡 Resources
 
-1. Clone this repository:
-```bash
-git clone https://github.com/Akanksha8761/python-practice-journey.git
-cd python-practice-journey
-```
-
-2. Navigate to any day's folder:
-```bash
-cd day-01
-```
-
-3. Run the solution:
-```bash
-python solution.py
-```
-
-## 💡 Key Concepts Learned
-
-### Day 1
-- ✅ List comprehensions vs traditional for loops
-- ✅ Set comprehensions for unique values
-- ✅ String methods: `.strip()`, `.lower()`
-- ✅ Conditional filtering in comprehensions
-- ✅ Using `set()` for removing duplicates
-
-### Day 2
-- ✅ Dictionary `.get()` method for safe key access
-- ✅ `Counter` class from collections module
-- ✅ String translation with `.translate()` and `.maketrans()`
-- ✅ Text preprocessing and cleaning
-- ✅ `defaultdict` for automatic default values
-- ✅ Regular expressions for pattern matching
-
-### Day 3
-- ✅ Lambda functions for inline operations
-- ✅ `sorted()` function with custom key functions
-- ✅ Multi-level sorting with tuples
-- ✅ Filtering lists of dictionaries
-- ✅ Using negative values for descending sort
-- ✅ `operator.itemgetter` for cleaner sorting
-
-## 🛠️ Technologies & Tools
-
-- **Language:** Python 3.x
-- **Version Control:** Git & GitHub
-- **Code Editor:** VS Code / PyCharm / Your preferred editor
-
-## 📖 Learning Resources
-
-- [Official Python Documentation](https://docs.python.org/3/)
+- [Python Official Documentation](https://docs.python.org/)
 - [Real Python](https://realpython.com/)
-- [Python.org Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide)
+- [W3Schools Python Tutorial](https://www.w3schools.com/python/)
+- [Kaggle](https://www.kaggle.com/learn)
 
-## 🤝 Contributing
+## 🎯 Goals
 
-This is a personal learning repository, but suggestions and feedback are always welcome! Feel free to:
-- Open an issue for suggestions
-- Share alternative solutions
-- Recommend new challenges
+- **Short-term:** Complete Python fundamentals within 2 months
+- **Medium-term:** Build 3-5 data analysis projects
+- **Long-term:** Develop and deploy an AI/ML application
 
-## 📝 License
+## 📝 Notes
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📬 Connect
-- LinkedIn: www.linkedin.com/in/akanksha-sharma-26a590201
-
+This is a learning journey, and mistakes are part of the process. Each day builds upon the previous one, and I'm committed to consistent practice and improvement.
 
 ---
 
-**Last Updated:** Day 3  
-**Current Focus:** Python Fundamentals  
-**Next Topic:** TBD
+**Happy Coding! 🚀**
 
-> "The journey of a thousand miles begins with a single line of code." 🚀
+*Last Updated: January 13, 2026*
