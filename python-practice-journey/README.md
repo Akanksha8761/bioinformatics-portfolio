@@ -36,7 +36,7 @@ python-practice-journey/
 |-----|-------|-----------|--------|
 | [Day 1](./day-01/) | List Comprehensions & String Methods | Clean & Filter User Tags | ✅ Completed |
 | [Day 2](./day-02/) | Dictionaries & Counter | Word Frequency Counter | ✅ Completed |
-| Day 3 | - | - | 📝 Upcoming |
+| [Day 3](./day-03/) | Sorting & Lambda Functions | Student Ranking System | ✅ Completed |
 | Day 4 | - | - | 📝 Upcoming |
 | Day 5 | - | - | 📝 Upcoming |
 | Day 6 | - | - | 📝 Upcoming |
@@ -53,7 +53,7 @@ python-practice-journey/
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/python-practice-journey.git
+git clone https://github.com/Akanksha8761/python-practice-journey.git
 cd python-practice-journey
 ```
 
@@ -84,6 +84,14 @@ python solution.py
 - ✅ `defaultdict` for automatic default values
 - ✅ Regular expressions for pattern matching
 
+### Day 3
+- ✅ Lambda functions for inline operations
+- ✅ `sorted()` function with custom key functions
+- ✅ Multi-level sorting with tuples
+- ✅ Filtering lists of dictionaries
+- ✅ Using negative values for descending sort
+- ✅ `operator.itemgetter` for cleaner sorting
+
 ## 🛠️ Technologies & Tools
 
 - **Language:** Python 3.x
@@ -108,13 +116,12 @@ This is a personal learning repository, but suggestions and feedback are always 
 This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Connect
+- LinkedIn: www.linkedin.com/in/akanksha-sharma-26a590201
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
 
 ---
 
-**Last Updated:** Day 2  
+**Last Updated:** Day 3  
 **Current Focus:** Python Fundamentals  
 **Next Topic:** TBD
 
