@@ -14,6 +14,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 ### Phase 1: Python Fundamentals ✅ (In Progress)
 - [x] Day 1: Data Types, Variables, and Type Conversion
 - [x] Day 2: Strings and String Manipulation
+- [x] Day 3: Arithmetic Operators and Mathematical Operations
 - [ ] Control Flow (if/else, loops)
 - [ ] Functions and Modules
 - [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
@@ -61,7 +62,11 @@ python-journey-to-ai-ml/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-03-.../
+├── Day-03-Arithmetic-Operators/
+│   ├── notes.md
+│   ├── exercises.py
+│   └── concepts.md
+├── Day-04-.../
 └── projects/
 ```
 
@@ -114,6 +119,34 @@ python-journey-to-ai-ml/
 
 [View Day 2 Details →](./Day-02-Strings-and-Manipulation/)
 
+---
+
+### Day 3: Arithmetic Operators and Mathematical Operations
+**Date:** January 15, 2026
+
+**Topics Covered:**
+- Basic operators: Addition, Subtraction, Multiplication, Division
+- Advanced operators: Floor Division, Modulus, Exponentiation
+- Operator precedence (BODMAS/PEMDAS)
+- Division types: `/` vs `//`
+- Type conversion in arithmetic operations
+- Practical calculator implementations
+
+**Key Takeaways:**
+- Division (`/`) always returns a float, even for whole numbers
+- Floor division (`//`) returns an integer, rounding down
+- Modulus (`%`) is perfect for even/odd checks and remainders
+- Exponentiation (`**`) can calculate roots: `9 ** 0.5 = 3.0`
+- Operator precedence follows BODMAS/PEMDAS rules
+- Exponentiation associates right-to-left
+- Use parentheses to make complex expressions clear
+
+**Exercises Completed:** 8 tasks including operator practice, division comparisons, even/odd checker, power calculator, rectangle calculator, order of operations, simple interest calculator, and tip calculator.
+
+**Practical Applications:** Built 5 functional calculators demonstrating real-world use of arithmetic operators.
+
+[View Day 3 Details →](./Day-03-Arithmetic-Operators/)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -135,4 +168,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 14, 2026*
+*Last Updated: January 15, 2026*
