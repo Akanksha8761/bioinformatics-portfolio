@@ -13,6 +13,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 
 ### Phase 1: Python Fundamentals ✅ (In Progress)
 - [x] Day 1: Data Types, Variables, and Type Conversion
+- [x] Day 2: Strings and String Manipulation
 - [ ] Control Flow (if/else, loops)
 - [ ] Functions and Modules
 - [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
@@ -56,7 +57,11 @@ python-journey-to-ai-ml/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-02-.../
+├── Day-02-Strings-and-Manipulation/
+│   ├── notes.md
+│   ├── exercises.py
+│   └── concepts.md
+├── Day-03-.../
 └── projects/
 ```
 
@@ -83,6 +88,32 @@ python-journey-to-ai-ml/
 
 [View Day 1 Details →](./Day-01-Data-Types-and-Variables/)
 
+---
+
+### Day 2: Strings and String Manipulation
+**Date:** January 14, 2026
+
+**Topics Covered:**
+- String concatenation with `+` and f-strings
+- String multiplication with `*`
+- String indexing (positive and negative)
+- String slicing with `[start:stop:step]`
+- String length with `len()`
+- Escape sequences (`\n`, `\t`, `\'`, `\"`)
+- Raw strings with `r` prefix
+
+**Key Takeaways:**
+- String slicing is powerful: `text[::-1]` reverses a string
+- Negative indexing counts from the end: `-1` is the last character
+- F-strings handle type conversion automatically
+- Escape sequences allow special characters in strings
+- Raw strings treat backslashes literally (useful for file paths)
+- Strings are immutable - cannot change individual characters
+
+**Exercises Completed:** 7 tasks covering concatenation, decorative separators, character extraction, substring creation, user input with length, escape sequences, and palindrome checking.
+
+[View Day 2 Details →](./Day-02-Strings-and-Manipulation/)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -104,4 +135,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 13, 2026*
+*Last Updated: January 14, 2026*
