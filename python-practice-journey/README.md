@@ -15,6 +15,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 1: Data Types, Variables, and Type Conversion
 - [x] Day 2: Strings and String Manipulation
 - [x] Day 3: Arithmetic Operators and Mathematical Operations
+- [x] Day 4: Week 1 Revision & Bioinformatics Applications
 - [ ] Control Flow (if/else, loops)
 - [ ] Functions and Modules
 - [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
@@ -66,7 +67,11 @@ python-journey-to-ai-ml/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-04-.../
+├── Day-04-Week-1-Revision/
+│   ├── notes.md
+│   ├── exercises.py
+│   └── concepts.md
+├── Day-05-.../
 └── projects/
 ```
 
@@ -147,6 +152,33 @@ python-journey-to-ai-ml/
 
 [View Day 3 Details →](./Day-03-Arithmetic-Operators/)
 
+---
+
+### Day 4: Week 1 Revision & Bioinformatics Applications
+**Date:** January 16, 2026
+
+**Topics Covered:**
+- Comprehensive revision of Days 1-3 concepts
+- Integration of variables, strings, and arithmetic
+- Introduction to bioinformatics applications
+- DNA sequence analysis and GC content calculation
+- Protein sequence composition analysis
+- Molecular weight calculations
+
+**Key Takeaways:**
+- All Week 1 concepts work together in real applications
+- String methods like `.count()` are powerful for biological data
+- Python is used in real scientific research (genomics, proteomics)
+- Breaking complex problems into simple steps is essential
+- Type conversion and f-strings are fundamental to interactive programs
+- Bioinformatics is accessible with basic Python skills
+
+**Exercises Completed:** 8 comprehensive tasks including personal info display, geometry calculations, average calculator, welcome message, integrated mini-challenge, DNA sequence analysis, amino acid composition, and molecular weight calculation.
+
+**Practical Applications:** Analyzed DNA sequences for GC content, examined protein compositions, and calculated molecular weights - real tasks used in research labs!
+
+[View Day 4 Details →](./Day-04-Week-1-Revision/)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -168,4 +200,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 15, 2026*
+*Last Updated: January 16, 2026*
