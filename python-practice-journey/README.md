@@ -16,7 +16,9 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 2: Strings and String Manipulation
 - [x] Day 3: Arithmetic Operators and Mathematical Operations
 - [x] Day 4: Week 1 Revision & Bioinformatics Applications
-- [ ] Control Flow (if/else, loops)
+- [x] Day 5: Conditional Statements (if/else)
+- [ ] Logical Operators and Complex Conditions
+- [ ] Loops (for and while)
 - [ ] Functions and Modules
 - [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
 - [ ] File Handling
@@ -56,22 +58,14 @@ This is a personal learning log where I track my daily progress, code exercises,
 python-journey-to-ai-ml/
 ├── README.md
 ├── Day-01-Data-Types-and-Variables/
-│   ├── notes.md
-│   ├── exercises.py
-│   └── concepts.md
 ├── Day-02-Strings-and-Manipulation/
-│   ├── notes.md
-│   ├── exercises.py
-│   └── concepts.md
 ├── Day-03-Arithmetic-Operators/
-│   ├── notes.md
-│   ├── exercises.py
-│   └── concepts.md
 ├── Day-04-Week-1-Revision/
+├── Day-05-Conditional-Statements/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-05-.../
+├── Day-06-.../
 └── projects/
 ```
 
@@ -179,6 +173,35 @@ python-journey-to-ai-ml/
 
 [View Day 4 Details →](./Day-04-Week-1-Revision/)
 
+---
+
+### Day 5: Conditional Statements (if/else)
+**Date:** January 17, 2026
+
+**Topics Covered:**
+- Comparison operators (==, !=, >, <, >=, <=)
+- Boolean values and logic
+- if statements for conditional execution
+- else statements for alternatives
+- Python indentation and code blocks
+- Type conversion with conditionals
+- Decision-making in programs
+
+**Key Takeaways:**
+- Programs can now make decisions based on conditions
+- Comparison operators return True or False (booleans)
+- Indentation defines code blocks in Python (4 spaces)
+- Use == for comparison, not = (which is assignment)
+- Always convert input() before using in comparisons
+- if/else creates two possible execution paths
+- Modulus (%) with conditionals is perfect for even/odd checks
+
+**Exercises Completed:** 7 programs including comparison operator practice, positive/negative checker, password validator, gene expression analyzer, adult/minor classifier, even/odd checker, and pass/fail grading system.
+
+**Practical Applications:** Built password validator, gene expression analyzer, grading system - programs that respond intelligently to different inputs!
+
+[View Day 5 Details →](./Day-05-Conditional-Statements/)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -200,4 +223,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 16, 2026*
+*Last Updated: January 17, 2026*
