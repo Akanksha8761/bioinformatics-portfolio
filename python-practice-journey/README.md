@@ -90,7 +90,7 @@ python-journey-to-ai-ml/
 
 **Exercises Completed:** 8 tasks covering personal details, product info, temperature conversion, string manipulation, user input, boolean flags, and type reassignment.
 
-[View Day 1 Details →](./day-01)
+[View Day 1 Details →](./day-01/concepts.md)
 
 ---
 
@@ -116,7 +116,7 @@ python-journey-to-ai-ml/
 
 **Exercises Completed:** 7 tasks covering concatenation, decorative separators, character extraction, substring creation, user input with length, escape sequences, and palindrome checking.
 
-[View Day 2 Details →](./Day-02-Strings-and-Manipulation/)
+[View Day 2 Details →](./day-02/concepts.md)
 
 ---
 
@@ -144,7 +144,7 @@ python-journey-to-ai-ml/
 
 **Practical Applications:** Built 5 functional calculators demonstrating real-world use of arithmetic operators.
 
-[View Day 3 Details →](./Day-03-Arithmetic-Operators/)
+[View Day 3 Details →](./day-03/concepts.md)
 
 ---
 
@@ -171,7 +171,7 @@ python-journey-to-ai-ml/
 
 **Practical Applications:** Analyzed DNA sequences for GC content, examined protein compositions, and calculated molecular weights - real tasks used in research labs!
 
-[View Day 4 Details →](./Day-04-Week-1-Revision/)
+[View Day 4 Details →](./day-04/concepts.md)
 
 ---
 
@@ -200,7 +200,7 @@ python-journey-to-ai-ml/
 
 **Practical Applications:** Built password validator, gene expression analyzer, grading system - programs that respond intelligently to different inputs!
 
-[View Day 5 Details →](./Day-05-Conditional-Statements/)
+[View Day 5 Details →](./day-05/concepts.md)
 
 ## 💡 Resources
 
