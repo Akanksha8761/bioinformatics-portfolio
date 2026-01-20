@@ -90,7 +90,7 @@ python-journey-to-ai-ml/
 
 **Exercises Completed:** 8 tasks covering personal details, product info, temperature conversion, string manipulation, user input, boolean flags, and type reassignment.
 
-[View Day 1 Details →](./Day-01-Data-Types-and-Variables/)
+[View Day 1 Details →](./day-01)
 
 ---
 
