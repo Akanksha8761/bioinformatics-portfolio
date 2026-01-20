@@ -17,8 +17,8 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 3: Arithmetic Operators and Mathematical Operations
 - [x] Day 4: Week 1 Revision & Bioinformatics Applications
 - [x] Day 5: Conditional Statements (if/else)
-- [ ] Logical Operators and Complex Conditions
-- [ ] Loops (for and while)
+- [x] Day 6: Loops (while and for) & Loop Control
+- [ ] Logical Operators and elif Statements
 - [ ] Functions and Modules
 - [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
 - [ ] File Handling
@@ -62,10 +62,11 @@ python-journey-to-ai-ml/
 ├── Day-03-Arithmetic-Operators/
 ├── Day-04-Week-1-Revision/
 ├── Day-05-Conditional-Statements/
+├── Day-06-Loops/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-06-.../
+├── Day-07-.../
 └── projects/
 ```
 
@@ -202,6 +203,36 @@ python-journey-to-ai-ml/
 
 [View Day 5 Details →](./day-05/concepts.md)
 
+---
+
+### Day 6: Loops (while and for) & Loop Control
+**Date:** January 19, 2026
+
+**Topics Covered:**
+- while loops for condition-based repetition
+- for loops for iterating over sequences
+- Loop control with break (exit loop) and continue (skip iteration)
+- range() function for number sequences
+- try/except for error handling
+- Increment/decrement operators (+=, -=)
+- Practical loop patterns and applications
+
+**Key Takeaways:**
+- Loops enable automation - process unlimited data with few lines
+- while loops run while condition is True (unknown iterations)
+- for loops iterate over known sequences (lists, ranges)
+- break exits loop immediately, continue skips current iteration
+- while True with break creates controlled infinite loops (perfect for menus)
+- try/except prevents crashes from invalid input
+- range() creates number sequences (stop value is exclusive)
+- Loops + conditionals = powerful data processing
+
+**Exercises Completed:** 5 programs including countdown timer, input validator with try/except, gene list search with break, patient status processor with continue, and fully functional ATM simulator.
+
+**Practical Applications:** Built ATM simulator, gene search engine, patient data processor - real automation and interactive applications!
+
+[View Day 6 Details →](./day-06/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -223,4 +254,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 17, 2026*
+*Last Updated: January 19, 2026*
