@@ -18,9 +18,10 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 4: Week 1 Revision & Bioinformatics Applications
 - [x] Day 5: Conditional Statements (if/else)
 - [x] Day 6: Loops (while and for) & Loop Control
-- [ ] Logical Operators and elif Statements
+- [x] Day 7: Advanced Loop Patterns & Practice
+- [ ] Lists and List Operations
 - [ ] Functions and Modules
-- [ ] Data Structures (Lists, Tuples, Dictionaries, Sets)
+- [ ] Dictionaries and Sets
 - [ ] File Handling
 - [ ] Exception Handling
 - [ ] Object-Oriented Programming (OOP)
@@ -63,10 +64,11 @@ python-journey-to-ai-ml/
 ├── Day-04-Week-1-Revision/
 ├── Day-05-Conditional-Statements/
 ├── Day-06-Loops/
+├── Day-07-Advanced-Loops/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-07-.../
+├── Day-08-.../
 └── projects/
 ```
 
@@ -233,6 +235,37 @@ python-journey-to-ai-ml/
 
 [View Day 6 Details →](./day-06/concepts.md)
 
+---
+
+### Day 7: Advanced Loop Patterns & Practice
+**Date:** January 20, 2026
+
+**Topics Covered:**
+- Advanced range() usage (start, stop, step variations)
+- Negative step for backward counting
+- String iteration (character-by-character processing)
+- Combining loops with conditionals for filtering
+- Logical operators in loops (AND, OR, NOT)
+- Common loop patterns (repetition, filtering, searching, accumulation)
+- Practical password systems and validation loops
+- Bioinformatics applications (genome scanning)
+
+**Key Takeaways:**
+- range() is incredibly versatile - can create any number sequence
+- Negative step enables countdown: range(10, 0, -1)
+- Strings are iterable - can loop through each character
+- Loops + conditionals = powerful data filtering and processing
+- Logical operators (and/or) enable complex filtering conditions
+- Pattern recognition is key - most problems fit common patterns
+- Practice reveals patterns and builds muscle memory
+- for with range() is cleaner than while for counting
+
+**Exercises Completed:** 8 comprehensive tasks including squares calculator, balance decrementer, divisibility filter, number validator, multiples finder, 3-attempt password system, skip multiples with continue, and genome scanner.
+
+**Practical Applications:** Built password authentication system with limited attempts, created genome scanner simulating chromosome processing, implemented sophisticated filters with logical operators!
+
+[View Day 7 Details →](./day-07/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -254,4 +287,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 19, 2026*
+*Last Updated: January 20, 2026*
