@@ -19,6 +19,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 5: Conditional Statements (if/else)
 - [x] Day 6: Loops (while and for) & Loop Control
 - [x] Day 7: Advanced Loop Patterns & Practice
+- [x] Day 8: Practice & Consolidation (elif)
 - [ ] Lists and List Operations
 - [ ] Functions and Modules
 - [ ] Dictionaries and Sets
@@ -65,10 +66,11 @@ python-journey-to-ai-ml/
 ├── Day-05-Conditional-Statements/
 ├── Day-06-Loops/
 ├── Day-07-Advanced-Loops/
+├── Day-08-Practice-Consolidation/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-08-.../
+├── Day-09-.../
 └── projects/
 ```
 
@@ -266,6 +268,36 @@ python-journey-to-ai-ml/
 
 [View Day 7 Details →](./day-07/concepts.md)
 
+---
+
+### Day 8: Practice & Consolidation (elif)
+**Date:** January 21, 2026
+
+**Topics Covered:**
+- elif statement for efficient multi-way decisions
+- Comparison: if/elif/else vs multiple if statements
+- Decision tree patterns and category classification
+- Simplifying conditional logic in elif chains
+- Integration of all concepts from Days 1-8
+- Code optimization and efficiency
+- Multiple solution approaches to same problem
+
+**Key Takeaways:**
+- elif is more efficient than multiple ifs - stops at first True condition
+- Only ONE block executes in if/elif/else chain
+- Order matters - check most specific conditions first
+- Later elifs can be simplified - they know previous conditions were False
+- Use if/elif/else for mutually exclusive categories
+- Use multiple ifs for independent conditions that can all be true
+- Consolidation strengthens understanding better than rushing to new topics
+- Every problem often has multiple valid solutions
+
+**Exercises Completed:** 3 focused tasks including grade classifier with if/elif/else, even number filter (showing 3 different methods), and bottles countdown with while loop.
+
+**Practical Applications:** Built efficient grade classification system, demonstrated multiple solution approaches to filtering, integrated all 8 days of concepts seamlessly!
+
+[View Day 8 Details →](./day-08/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -287,4 +319,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 20, 2026*
+*Last Updated: January 21, 2026*
