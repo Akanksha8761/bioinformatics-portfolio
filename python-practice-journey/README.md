@@ -6,7 +6,7 @@ Welcome to my Python learning journey! This repository documents my progress fro
 
 This is a personal learning log where I track my daily progress, code exercises, and projects as I advance from Python basics to artificial intelligence and machine learning.
 
-**Started:** January 2025  
+**Started:** January 2026  
 **Goal:** Master Python and become proficient in AI/ML
 
 ## 🗺️ Learning Roadmap
