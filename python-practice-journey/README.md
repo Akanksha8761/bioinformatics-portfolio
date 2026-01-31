@@ -20,9 +20,11 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 6: Loops (while and for) & Loop Control
 - [x] Day 7: Advanced Loop Patterns & Practice
 - [x] Day 8: Practice & Consolidation (elif)
-- [ ] Lists and List Operations
+- [x] Day 9: Lists - Python's Fundamental Data Structure
+- [ ] List Comprehensions and Advanced List Operations
 - [ ] Functions and Modules
 - [ ] Dictionaries and Sets
+- [ ] Tuples and String Methods
 - [ ] File Handling
 - [ ] Exception Handling
 - [ ] Object-Oriented Programming (OOP)
@@ -67,10 +69,11 @@ python-journey-to-ai-ml/
 ├── Day-06-Loops/
 ├── Day-07-Advanced-Loops/
 ├── Day-08-Practice-Consolidation/
+├── Day-09-Lists/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-09-.../
+├── Day-10-.../
 └── projects/
 ```
 
@@ -298,6 +301,42 @@ python-journey-to-ai-ml/
 
 [View Day 8 Details →](./day-08/concepts.md)
 
+---
+
+### Day 9: Lists - Python's Fundamental Data Structure
+**Date:** January 22, 2026
+
+**Topics Covered:**
+- List creation (integers, strings, mixed types, empty lists)
+- Indexing (positive and negative) to access elements
+- Slicing with [start:stop:step] notation
+- List mutability - modifying lists after creation
+- Adding elements (append, insert, extend methods)
+- Removing elements (pop, remove, del, clear methods)
+- List methods (sort, reverse, count, index)
+- Membership testing with 'in' operator
+- Iterating through lists with for loops
+- List operations (concatenation, repetition)
+- Bioinformatics applications (gene lists, methylation data)
+
+**Key Takeaways:**
+- Lists are mutable - can be changed after creation (unlike strings!)
+- Indexing starts at 0, negative indices count from end (-1 is last)
+- Slicing stop value is exclusive, [::-1] reverses a list
+- append() adds to end, insert() adds at specific position
+- pop() removes and returns item, remove() removes by value
+- sort() modifies list in place, sorted() returns sorted copy
+- Lists + loops = powerful data processing capability
+- Lists are fundamental to working with real datasets
+- in operator checks membership efficiently
+- Lists open the door to data science and analysis
+
+**Exercises Completed:** Comprehensive exploration of list operations including creation, indexing, slicing, modification, adding/removing elements, sorting, iteration, and practical bioinformatics applications with gene lists and methylation data.
+
+**Practical Applications:** Managed gene lists, processed methylation values with threshold filtering, tracked experiment workflows - real research data processing patterns!
+
+[View Day 9 Details →](./day-09/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -319,4 +358,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 21, 2026*
+*Last Updated: January 22, 2026*
