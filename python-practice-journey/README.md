@@ -6,7 +6,7 @@ Welcome to my Python learning journey! This repository documents my progress fro
 
 This is a personal learning log where I track my daily progress, code exercises, and projects as I advance from Python basics to artificial intelligence and machine learning.
 
-**Started:** January 2026  
+**Started:** January 2025  
 **Goal:** Master Python and become proficient in AI/ML
 
 ## 🗺️ Learning Roadmap
@@ -21,10 +21,10 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 7: Advanced Loop Patterns & Practice
 - [x] Day 8: Practice & Consolidation (elif)
 - [x] Day 9: Lists - Python's Fundamental Data Structure
-- [ ] List Comprehensions and Advanced List Operations
+- [x] Day 10: Dictionaries - Key-Value Data Structures
+- [ ] Tuples and Sets
+- [ ] List Comprehensions and Advanced Operations
 - [ ] Functions and Modules
-- [ ] Dictionaries and Sets
-- [ ] Tuples and String Methods
 - [ ] File Handling
 - [ ] Exception Handling
 - [ ] Object-Oriented Programming (OOP)
@@ -70,10 +70,11 @@ python-journey-to-ai-ml/
 ├── Day-07-Advanced-Loops/
 ├── Day-08-Practice-Consolidation/
 ├── Day-09-Lists/
+├── Day-10-Dictionaries/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-10-.../
+├── Day-11-.../
 └── projects/
 ```
 
@@ -337,6 +338,41 @@ python-journey-to-ai-ml/
 
 [View Day 9 Details →](./day-09/concepts.md)
 
+---
+
+### Day 10: Dictionaries - Key-Value Data Structures
+**Date:** January 23, 2026 🌼 *Vasant Panchami - Festival of Knowledge*
+
+**Topics Covered:**
+- Dictionary creation (empty, with data, dict() constructor)
+- Accessing values with [] and .get() methods
+- Adding and modifying items (same syntax!)
+- Removing items (del, pop(), popitem(), clear())
+- Dictionary views (keys(), values(), items())
+- Membership testing with 'in' operator
+- Iterating through dictionaries (three methods)
+- Valid keys and values (immutability requirement)
+- Common dictionary patterns (counting, filtering, building)
+- Bioinformatics applications (gene expression mapping, patient records)
+
+**Key Takeaways:**
+- Dictionaries map keys to values for fast lookups (O(1) time)
+- Use [] when certain key exists, .get() when it might not exist
+- Same syntax for adding and modifying: dict[key] = value
+- Keys must be unique and immutable (strings, numbers, tuples)
+- Values can be any type (including lists and other dictionaries)
+- .items() iteration is most Pythonic: for key, value in dict.items()
+- Dictionary views are dynamic - automatically reflect changes
+- pop() removes and returns value, del just deletes
+- Perfect for structured data: patient info, gene expression, configs
+- Dictionaries are everywhere: JSON, APIs, databases, configs
+
+**Exercises Completed:** Comprehensive dictionary operations including creation, access ([] vs .get()), adding/modifying, removing (all methods), views, membership testing, iteration patterns, and methylation analysis mini-project filtering hypermethylated sites.
+
+**Practical Applications:** Built gene expression mapper, patient metadata storage, methylation site analyzer - real-world key-value data organization matching database and API patterns!
+
+[View Day 10 Details →](./day-10/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -358,4 +394,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-*Last Updated: January 22, 2026*
+**🌼 Special Note: Day 10 completed on Vasant Panchami - the festival celebrating knowledge, learning, and wisdom! A perfect day for mastering data structures! 🌼**
+
+*Last Updated: January 23, 2026*
