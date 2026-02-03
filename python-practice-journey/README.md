@@ -6,7 +6,7 @@ Welcome to my Python learning journey! This repository documents my progress fro
 
 This is a personal learning log where I track my daily progress, code exercises, and projects as I advance from Python basics to artificial intelligence and machine learning.
 
-**Started:** January 2025  
+**Started:** January 2026
 **Goal:** Master Python and become proficient in AI/ML
 
 ## 🗺️ Learning Roadmap
@@ -22,7 +22,8 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 8: Practice & Consolidation (elif)
 - [x] Day 9: Lists - Python's Fundamental Data Structure
 - [x] Day 10: Dictionaries - Key-Value Data Structures
-- [ ] Tuples and Sets
+- [x] Day 11: Tuples - Immutable Sequences
+- [ ] Sets and Set Operations
 - [ ] List Comprehensions and Advanced Operations
 - [ ] Functions and Modules
 - [ ] File Handling
@@ -71,10 +72,11 @@ python-journey-to-ai-ml/
 ├── Day-08-Practice-Consolidation/
 ├── Day-09-Lists/
 ├── Day-10-Dictionaries/
+├── Day-11-Tuples/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-11-.../
+├── Day-12-.../
 └── projects/
 ```
 
@@ -373,6 +375,43 @@ python-journey-to-ai-ml/
 
 [View Day 10 Details →](./day-10/concepts.md)
 
+---
+
+### Day 11: Tuples - Immutable Sequences
+**Date:** January 24, 2026
+
+**Topics Covered:**
+- Tuple creation (parentheses, tuple packing, single-element tuples)
+- Tuple immutability - cannot change after creation
+- Indexing and slicing (same as lists and strings)
+- Tuple unpacking - extracting elements into variables
+- Tuple methods (count and index - only 2 methods!)
+- Converting between tuples, lists, and strings
+- When to use tuples vs lists vs dictionaries
+- Tuples as dictionary keys
+- Common tuple patterns (multiple returns, coordinate pairs)
+- Bioinformatics applications (genomic coordinates, patient IDs)
+
+**Key Takeaways:**
+- Tuples are IMMUTABLE - cannot be changed after creation (data integrity!)
+- Single element tuple requires trailing comma: (1,) not (1)
+- Parentheses are optional for tuple packing: 1, 2, 3 is a tuple
+- Same indexing and slicing as lists: my_tuple[0], my_tuple[1:3], my_tuple[::-1]
+- Only 2 methods: count() and index() (no modification methods!)
+- Unpacking extracts elements: x, y = (10, 20)
+- Tuples can be dictionary keys (lists cannot - they're mutable!)
+- Faster and use less memory than lists
+- Perfect for data that shouldn't change (coordinates, IDs, config)
+- Variable swapping uses tuples: a, b = b, a
+- Functions naturally return tuples for multiple values
+- Immutability is a feature, not a limitation - ensures data integrity
+
+**Exercises Completed:** Comprehensive tuple operations including creation (all methods), single-element tuples with trailing comma, indexing/slicing, immutability testing, concatenation, unpacking (basic and with different types), count() and index() methods with try/except, and bioinformatics applications with genomic coordinates and patient samples.
+
+**Practical Applications:** Created genomic coordinate tuples, defined immutable DNA base constants, stored patient IDs that shouldn't change, built coordinate systems for chromosome positions - real data integrity patterns!
+
+[View Day 11 Details →](./day-11/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -394,6 +433,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🌼 Special Note: Day 10 completed on Vasant Panchami - the festival celebrating knowledge, learning, and wisdom! A perfect day for mastering data structures! 🌼**
+**🇮🇳 Special Note: Republic Day 2026 - Celebrating 77 years of the Constitution of India! Jai Hind! 🇮🇳**
 
-*Last Updated: January 23, 2026*
+*Last Updated: January 26, 2026*
