@@ -379,7 +379,7 @@ python-journey-to-ai-ml/
 ---
 
 ### Day 11: Tuples - Immutable Sequences
-**Date:** January 24, 2026
+**Date:** January 26, 2026
 
 **Topics Covered:**
 - Tuple creation (parentheses, tuple packing, single-element tuples)
