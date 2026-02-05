@@ -6,8 +6,7 @@ Welcome to my Python learning journey! This repository documents my progress fro
 
 This is a personal learning log where I track my daily progress, code exercises, and projects as I advance from Python basics to artificial intelligence and machine learning.
 
-**Started:** January 2026
-
+**Started:** January 2026  
 **Goal:** Master Python and become proficient in AI/ML
 
 ## 🗺️ Learning Roadmap
@@ -24,7 +23,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 9: Lists - Python's Fundamental Data Structure
 - [x] Day 10: Dictionaries - Key-Value Data Structures
 - [x] Day 11: Tuples - Immutable Sequences
-- [ ] Sets and Set Operations
+- [x] Day 12: Sets - Unique Elements & Mathematical Operations
 - [ ] List Comprehensions and Advanced Operations
 - [ ] Functions and Modules
 - [ ] File Handling
@@ -74,10 +73,11 @@ python-journey-to-ai-ml/
 ├── Day-09-Lists/
 ├── Day-10-Dictionaries/
 ├── Day-11-Tuples/
+├── Day-12-Sets/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-12-.../
+├── Day-13-.../
 └── projects/
 ```
 
@@ -411,7 +411,44 @@ python-journey-to-ai-ml/
 
 **Practical Applications:** Created genomic coordinate tuples, defined immutable DNA base constants, stored patient IDs that shouldn't change, built coordinate systems for chromosome positions - real data integrity patterns!
 
-[View Day 11 Details →](./day-11/concepts.md)
+[View Day 11 Details →](./day-011/concepts.md)
+
+---
+
+### Day 12: Sets - Unique Elements & Mathematical Operations
+**Date:** January 27, 2026
+
+**Topics Covered:**
+- Set creation (curly braces, from lists/tuples, set() constructor)
+- Automatic duplicate removal (uniqueness property)
+- Unordered nature (no indexing or slicing allowed)
+- Elements must be immutable (hashable types only)
+- Adding elements (add for single, update for multiple)
+- Removing elements (remove, discard, pop, clear methods)
+- Fast membership testing with 'in' operator (O(1) time)
+- Set operations: union (|), intersection (&), difference (-), symmetric difference (^)
+- Subset and superset relationships (<=, >=, <, >)
+- Bioinformatics applications (gene comparison, sample analysis)
+
+**Key Takeaways:**
+- Sets automatically remove duplicates - no manual deduplication needed!
+- {} creates empty dict, NOT empty set - use set() instead
+- Sets are unordered - cannot use indexing or slicing
+- Elements must be immutable (strings, numbers, tuples OK; lists, dicts NOT OK)
+- add() adds single element, update() adds multiple elements
+- remove() raises KeyError if not found, discard() doesn't (safer!)
+- pop() removes arbitrary element (sets are unordered)
+- O(1) membership testing vs O(n) for lists - huge performance gain
+- Mathematical operators: | (union/OR), & (intersection/AND), - (difference/MINUS), ^ (XOR)
+- Perfect for removing duplicates and comparing collections
+- Subset (<=) checks if all elements of A in B, superset (>=) checks if A contains all of B
+- Set operations enable powerful data comparisons in one line
+
+**Exercises Completed:** Comprehensive set operations including creation (from lists, tuples, direct), duplicate removal, adding/removing elements (all methods), membership testing, mathematical operations (union, intersection, difference, symmetric difference), subset/superset checks, and bioinformatics mini-project comparing hypermethylated genes across samples.
+
+**Practical Applications:** Built gene comparison analyzer finding common genes, sample-specific genes, and all unique genes across samples - real genomics research patterns using set theory!
+
+[View Day 12 Details →](./day-12/concepts.md)
 
 ## 💡 Resources
 
@@ -434,6 +471,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🇮🇳 Special Note: Republic Day 2026 - Celebrating 77 years of the Constitution of India! Jai Hind! 🇮🇳**
+**🎉 THE FOUR CORE DATA STRUCTURES COMPLETE! Lists, Dictionaries, Tuples, and Sets - Foundation Mastered! 🎉**
 
-*Last Updated: January 26, 2026*
+*Last Updated: January 27, 2026*
