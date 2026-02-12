@@ -24,7 +24,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 10: Dictionaries - Key-Value Data Structures
 - [x] Day 11: Tuples - Immutable Sequences
 - [x] Day 12: Sets - Unique Elements & Mathematical Operations
-- [ ] List Comprehensions and Advanced Operations
+- [x] Day 13: List Comprehensions - Elegant List Creation
 - [ ] Functions and Modules
 - [ ] File Handling
 - [ ] Exception Handling
@@ -74,10 +74,11 @@ python-journey-to-ai-ml/
 ├── Day-10-Dictionaries/
 ├── Day-11-Tuples/
 ├── Day-12-Sets/
+├── Day-13-List-Comprehensions/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-13-.../
+├── Day-14-.../
 └── projects/
 ```
 
@@ -450,6 +451,41 @@ python-journey-to-ai-ml/
 
 [View Day 12 Details →](./day-12/concepts.md)
 
+---
+
+### Day 13: List Comprehensions - Elegant List Creation
+**Date:** January 28, 2026
+
+**Topics Covered:**
+- Basic list comprehensions (simple transformations)
+- List comprehensions with filtering
+- Conditional expressions in list comprehensions
+- Combining transformation and filtering
+- Nested list comprehensions
+- Flattening lists of lists
+- Bioinformatics applications (gene processing, methylation filtering)
+
+**Key Takeaways:**
+- List comprehensions are more concise than traditional for loops
+- Basic syntax: `[expression for item in iterable]`
+- With filter: `[expression for item in iterable if condition]`
+- With if/else: `[expr1 if condition else expr2 for item in iterable]`
+- Nested syntax: `[expr for i in outer for j in inner]`
+- More readable and Pythonic than equivalent loop code
+- Generally faster than traditional loops (optimized in Python)
+- Filter comes BEFORE transformation in syntax
+- Conditional expression (if/else) comes BEFORE the for clause
+- Perfect for transforming and filtering lists in one elegant line
+- Can become hard to read if too complex - keep it simple!
+- Works with any iterable (lists, tuples, sets, strings, ranges)
+
+**Exercises Completed:** Comprehensive practice with basic transformations (squares, uppercase, suffixes), filtering (even numbers, threshold values, gene names by prefix), conditional expressions (Even/Odd labels, High/Low categorization), combined operations (transform + filter), nested comprehensions (coordinate pairs, list flattening), and bioinformatics applications with gene name processing and methylation analysis.
+
+**Practical Applications:** Built elegant one-line solutions for gene name preprocessing (uppercase conversion, suffix addition), methylation value filtering (above threshold), gene filtering by starting letter, and expression level categorization - demonstrating the power and elegance of Pythonic code!
+
+[View Day 13 Details →](./day-13/concepts.md)
+
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -471,6 +507,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🎉 THE FOUR CORE DATA STRUCTURES COMPLETE! Lists, Dictionaries, Tuples, and Sets - Foundation Mastered! 🎉**
+**✨ Pythonic Elegance Unlocked! List Comprehensions Mastered - Write Beautiful, Concise Code! ✨**
 
-*Last Updated: January 27, 2026*
+*Last Updated: January 28, 2026*
