@@ -26,7 +26,9 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 12: Sets - Unique Elements & Mathematical Operations
 - [x] Day 13: List Comprehensions - Elegant List Creation
 - [x] Day 14: Week 3 Revision & Consolidation
-- [ ] Functions and Modules
+- [x] Day 15: Functions - Part 1 (Basics, Parameters, Return Values, Scope)
+- [ ] Functions - Part 2 (Advanced Topics)
+- [ ] Modules and Imports
 - [ ] File Handling
 - [ ] Exception Handling
 - [ ] Object-Oriented Programming (OOP)
@@ -77,10 +79,11 @@ python-journey-to-ai-ml/
 ├── Day-12-Sets/
 ├── Day-13-List-Comprehensions/
 ├── Day-14-Week-3-Revision/
+├── Day-15-Functions-Part-1/
 │   ├── notes.md
 │   ├── exercises.py
 │   └── concepts.md
-├── Day-15-.../
+├── Day-16-.../
 └── projects/
 ```
 
@@ -522,6 +525,48 @@ python-journey-to-ai-ml/
 
 [View Day 14 Details →](./day-14/concepts.md)
 
+---
+
+### Day 15: Functions - Part 1
+**Date:** January 30, 2026
+
+**Topics Covered:**
+- Function definition using def keyword
+- Basic functions (no parameters, no return)
+- Functions with parameters (single and multiple)
+- Return values (single and multiple via tuples)
+- Positional vs keyword arguments
+- Default parameter values
+- Variable scope (local vs global)
+- The global keyword and why to avoid it
+- Docstrings for documentation
+- Best practices for writing functions
+
+**Key Takeaways:**
+- Functions enable code reuse - write once, use many times (DRY principle)
+- Use def keyword followed by function name and parentheses
+- Parameters make functions flexible and reusable with different inputs
+- return sends data back to the caller - can return any type
+- Multiple values returned as tuples and can be unpacked
+- Keyword arguments allow calling in any order
+- Default parameters create optional arguments
+- Parameters must be: non-defaults first, then defaults
+- Local variables only exist inside functions (local scope)
+- Global variables can be read but avoid modifying with global keyword
+- Better practice: pass as parameter, return new value
+- Variable shadowing - local variable can have same name as global
+- Docstrings ("""text""") document what functions do
+- Functions should focus on ONE clear task
+- Descriptive names make code self-documenting
+- Return early for error cases
+- Functions can call other functions (composition)
+
+**Exercises Completed:** Comprehensive practice with basic functions (say_hello, show_analysis_result), parameterized functions (greet, area_triangle), return values (add_numbers, get_list_stats), keyword arguments (gene_description), default parameters (set_analysis_parameter, configure_plot), scope examples (global vs local), and built a complete calculator function.
+
+**Practical Applications:** Created gene description formatter, triangle area calculator, list statistics analyzer, methylation analysis parameter configurator, plot configuration function with defaults, and interactive calculator - demonstrating real-world function usage for bioinformatics and data analysis!
+
+[View Day 15 Details →](./day-15/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -543,6 +588,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🔄 WEEK 3 COMPLETE! Data Structures & Comprehensions - Solid Foundation Established! 🔄**
+**🔧 WEEK 4 STARTED! Functions - Code Reusability & Professional Structure Unlocked! 🔧**
 
-*Last Updated: January 29, 2026*
+*Last Updated: January 30, 2026*
