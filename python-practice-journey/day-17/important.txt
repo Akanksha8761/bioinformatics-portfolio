@@ -1,0 +1,4 @@
+Hello from Python!
+This is the first line of text.
+The second line in the file is gene MYB77 and its expression is 30.25
+This is third line which I am appending to the file 
