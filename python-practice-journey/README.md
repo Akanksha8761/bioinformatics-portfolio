@@ -28,7 +28,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 14: Week 3 Revision & Consolidation
 - [x] Day 15: Functions - Part 1 (Basics, Parameters, Return Values, Scope)
 - [x] Day 16: Modules - Code Organization & Reusability
-- [ ] File Handling (Reading and Writing Files)
+- [x] Day 17: File Handling (Reading and Writing Files)
 - [ ] Exception Handling
 - [ ] Object-Oriented Programming (OOP)
 
