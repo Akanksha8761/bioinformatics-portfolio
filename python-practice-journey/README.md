@@ -27,9 +27,8 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 13: List Comprehensions - Elegant List Creation
 - [x] Day 14: Week 3 Revision & Consolidation
 - [x] Day 15: Functions - Part 1 (Basics, Parameters, Return Values, Scope)
-- [ ] Functions - Part 2 (Advanced Topics)
-- [ ] Modules and Imports
-- [ ] File Handling
+- [x] Day 16: Modules - Code Organization & Reusability
+- [ ] File Handling (Reading and Writing Files)
 - [ ] Exception Handling
 - [ ] Object-Oriented Programming (OOP)
 
@@ -80,10 +79,12 @@ python-journey-to-ai-ml/
 ├── Day-13-List-Comprehensions/
 ├── Day-14-Week-3-Revision/
 ├── Day-15-Functions-Part-1/
-│   ├── notes.md
-│   ├── exercises.py
-│   └── concepts.md
-├── Day-16-.../
+├── Day-16-Modules/
+│   ├── module1.py
+│   ├── main_program.py
+│   ├── concepts.md
+│   └── notes.md
+├── Day-17-.../
 └── projects/
 ```
 
@@ -567,6 +568,50 @@ python-journey-to-ai-ml/
 
 [View Day 15 Details →](./day-15/concepts.md)
 
+---
+
+### Day 16: Modules - Code Organization & Reusability
+**Date:** January 31, 2026
+
+**Topics Covered:**
+- What are modules (Python files as reusable libraries)
+- Creating custom modules (module1.py)
+- Importing modules (import statement)
+- Using imported functions (module.function() syntax)
+- The `if __name__ == "__main__":` pattern
+- The `__name__` magic variable
+- Different import styles (standard, specific, alias, wildcard)
+- Module search path and Python path
+- Module best practices and naming conventions
+- Module structure and organization
+- Testing modules directly vs importing
+
+**Key Takeaways:**
+- Modules are simply Python files (.py) that can be imported
+- Any Python file can be a module - no special syntax required
+- Use `import module_name` to make functions available
+- Access functions with `module_name.function_name()` syntax
+- The `__name__` variable is set to "__main__" when file run directly
+- The `__name__` variable equals module name when file is imported
+- `if __name__ == "__main__":` allows dual-purpose files (module + script)
+- This pattern enables testing within the module file
+- Standard import (`import module`) is clearest and most professional
+- Specific imports (`from module import function`) are shorter but less clear
+- Alias imports (`import module as m`) balance brevity and clarity
+- Avoid wildcard imports (`from module import *`) - causes namespace pollution
+- Modules enable code organization and reusability (DRY principle)
+- Keep related functions together in one module
+- Use lowercase names with underscores for modules
+- Include docstrings in modules and functions
+- Test modules by running them directly
+- Professional code is organized into multiple modules
+
+**Exercises Completed:** Created module1.py with greet() and calculate() functions, created main_program.py that imports and uses module1, implemented `if __name__ == "__main__":` pattern for testing, demonstrated both direct execution and import usage, practiced different import styles.
+
+**Practical Applications:** Built reusable calculator module with multiple operations (sum, difference, product, quotient), created greeting function for Palampur welcome message, demonstrated professional code organization, showed how to test modules independently, illustrated real-world module usage pattern!
+
+[View Day 16 Details →](./day-16/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -588,6 +633,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🔧 WEEK 4 STARTED! Functions - Code Reusability & Professional Structure Unlocked! 🔧**
+**📦 Modules Mastered! Code Reusability at Scale - Write Once, Use Everywhere! 📦**
 
-*Last Updated: January 30, 2026*
+*Last Updated: February 2, 2026*
