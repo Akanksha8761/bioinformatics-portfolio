@@ -80,11 +80,11 @@ python-journey-to-ai-ml/
 ├── Day-14-Week-3-Revision/
 ├── Day-15-Functions-Part-1/
 ├── Day-16-Modules/
-│   ├── module1.py
-│   ├── main_program.py
+├── Day-17-File-Handling/
+│   ├── exercises.py
 │   ├── concepts.md
 │   └── notes.md
-├── Day-17-.../
+├── Day-18-.../
 └── projects/
 ```
 
@@ -612,6 +612,49 @@ python-journey-to-ai-ml/
 
 [View Day 16 Details →](./day-16/concepts.md)
 
+---
+
+### Day 17: File Handling - Reading and Writing Data
+**Date:** February 2, 2026
+
+**Topics Covered:**
+- File handling basics (open, read/write, close)
+- File modes (r, w, a, r+, w+, a+)
+- Writing text to files (write() method)
+- Reading text from files (read(), readline(), readlines())
+- Reading files line by line (iteration)
+- Appending data to existing files
+- The `with` statement (context manager)
+- Automatic file closing with `with`
+- String methods for file processing (strip(), split())
+- File paths (relative vs absolute)
+- Processing data pipelines (read → process → write)
+- Creating and processing gene lists
+- Filtering and transforming file data
+
+**Key Takeaways:**
+- Files enable data persistence - data survives program execution
+- Three-step pattern: Open → Read/Write → Close
+- Always use `with` statement - ensures automatic file closing
+- `with` prevents resource leaks even when errors occur
+- File mode 'r' reads (file must exist)
+- File mode 'w' writes (OVERWRITES existing content - dangerous!)
+- File mode 'a' appends (safely adds to end)
+- write() method does NOT add newlines automatically - must include \n
+- read() returns entire file as single string
+- readline() returns one line at a time
+- readlines() returns list of all lines
+- Iterating with `for line in file` is best for large files
+- Always use strip() to remove whitespace from read lines
+- `with open(file, mode) as f:` is the professional pattern
+- Nested `with` statements enable read-process-write workflows
+- File handling is ESSENTIAL for real-world data processing
+
+**Exercises Completed:** Wrote text to first_file.txt with multiple lines and gene data, read entire file with read() method, read line-by-line with iteration, appended new content safely, used `with` statement for automatic closing, created gene_list.txt with gene names, processed genes (read, uppercase, filter by starting letter), wrote selected genes to selected_genes.txt - complete data pipeline!
+
+**Practical Applications:** Built real bioinformatics data pipeline - read gene list from file, converted to uppercase, filtered genes starting with 'T' or 'A', wrote results to new file. Created experiment logging system with append mode. Demonstrated read-process-write workflow for data transformation. This is REAL data processing!
+
+[View Day 17 Details →](./day-17/concepts.md)
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -633,6 +676,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**📦 Modules Mastered! Code Reusability at Scale - Write Once, Use Everywhere! 📦**
+**💾 File Handling Mastered! Data Persistence Achieved - Real-World Data Processing! 💾**
 
-*Last Updated: February 3, 2026*
+*Last Updated: February 2, 2026*
