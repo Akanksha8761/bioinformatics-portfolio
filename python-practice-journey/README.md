@@ -29,7 +29,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 15: Functions - Part 1 (Basics, Parameters, Return Values, Scope)
 - [x] Day 16: Modules - Code Organization & Reusability
 - [x] Day 17: File Handling (Reading and Writing Files)
-- [ ] Exception Handling
+- [x] Day 18: Exception Handling & Debugging
 - [ ] Object-Oriented Programming (OOP)
 
 ### Phase 2: Intermediate Python
@@ -80,11 +80,11 @@ python-journey-to-ai-ml/
 ├── Day-14-Week-3-Revision/
 ├── Day-15-Functions-Part-1/
 ├── Day-16-Modules/
-├── Day-17-File-Handling/
+├── Day-18-Exception-Handling/
 │   ├── exercises.py
 │   ├── concepts.md
 │   └── notes.md
-├── Day-18-.../
+├── Day-19-.../
 └── projects/
 ```
 
@@ -655,6 +655,58 @@ python-journey-to-ai-ml/
 **Practical Applications:** Built real bioinformatics data pipeline - read gene list from file, converted to uppercase, filtered genes starting with 'T' or 'A', wrote results to new file. Created experiment logging system with append mode. Demonstrated read-process-write workflow for data transformation. This is REAL data processing!
 
 [View Day 17 Details →](./day-17/concepts.md)
+
+---
+
+### Day 18: Exception Handling & Debugging
+**Date:** February 3, 2026
+
+**Topics Covered:**
+- What are exceptions (runtime errors)
+- The try-except block (basic error handling)
+- Catching specific exceptions (ZeroDivisionError, ValueError, IndexError, etc.)
+- Handling multiple exception types
+- The else block (runs if no exception occurred)
+- The finally block (always runs for cleanup)
+- Complete try-except-else-finally pattern
+- Accessing exception information with 'as'
+- Raising custom exceptions with 'raise'
+- Re-raising caught exceptions
+- Common exception types and their causes
+- Exception handling best practices
+- Debugging technique 1: Reading tracebacks
+- Debugging technique 2: print() debugging ("caveman debugging")
+- Debugging technique 3: IDE debugger (breakpoints, stepping)
+- Defensive programming (input validation)
+
+**Key Takeaways:**
+- Exceptions are errors that occur during program execution
+- Without exception handling, programs crash when errors occur
+- try-except allows programs to handle errors gracefully and continue running
+- Always catch SPECIFIC exceptions, not generic Exception class
+- try block contains code that might cause an error
+- except block handles the error if it occurs
+- Multiple except blocks can handle different error types
+- else block runs ONLY if no exception occurred in try block
+- finally block ALWAYS runs, whether error occurred or not
+- finally is perfect for cleanup code (closing files, releasing resources)
+- Use 'except ExceptionType as e' to capture exception object
+- Use 'raise' to trigger exceptions manually for validation
+- raise ValueError("message") creates custom error with message
+- Common exceptions: ZeroDivisionError, ValueError, IndexError, KeyError, FileNotFoundError, TypeError
+- Read tracebacks bottom-up: shows error type, location, and call stack
+- print() debugging: add debug prints to trace execution flow
+- Test edge cases: empty lists, None values, zero, invalid inputs
+- Defensive programming: validate inputs before processing
+- Don't silence exceptions - handle them meaningfully
+- Exceptions are for exceptional cases, not normal control flow
+
+**Exercises Completed:** Basic try-except with ZeroDivisionError, multiple exception handling (ValueError and IndexError), else block usage for success code, finally block for guaranteed cleanup, raising custom exceptions in methylation validation function, reading and understanding tracebacks, print() debugging with calculate_average function showing execution flow, complete exception handling pattern with file operations.
+
+**Practical Applications:** Safe division operations, safe file reading with error handling, methylation value validation (must be 0-1), gene expression data processing with error recovery, complete data pipeline with try-except-else-finally pattern. Built production-quality code that handles all error cases gracefully!
+
+[View Day 18 Details →](./day-18/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -678,4 +730,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **💾 File Handling Mastered! Data Persistence Achieved - Real-World Data Processing! 💾**
 
-*Last Updated: February 2, 2026*
+*Last Updated: February 3, 2026*
