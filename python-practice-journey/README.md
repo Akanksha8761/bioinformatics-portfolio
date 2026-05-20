@@ -30,6 +30,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 16: Modules - Code Organization & Reusability
 - [x] Day 17: File Handling (Reading and Writing Files)
 - [x] Day 18: Exception Handling & Debugging
+- [x] Day 19: Advanced Functions (*args, **kwargs, Lambda)
 - [ ] Object-Oriented Programming (OOP)
 
 ### Phase 2: Intermediate Python
@@ -81,10 +82,11 @@ python-journey-to-ai-ml/
 ├── Day-15-Functions-Part-1/
 ├── Day-16-Modules/
 ├── Day-18-Exception-Handling/
+├── Day-19-Advanced-Functions/
 │   ├── exercises.py
 │   ├── concepts.md
 │   └── notes.md
-├── Day-19-.../
+├── Day-20-.../
 └── projects/
 ```
 
@@ -707,6 +709,54 @@ python-journey-to-ai-ml/
 
 [View Day 18 Details →](./day-18/concepts.md)
 
+---
+
+### Day 19: Advanced Functions - *args, **kwargs, Lambda
+**Date:** February 4, 2026
+
+**Topics Covered:**
+- Variable positional arguments (*args)
+- Variable keyword arguments (**kwargs)
+- Understanding *args as tuple
+- Understanding **kwargs as dictionary
+- Combining *args and **kwargs in functions
+- Parameter order rules (positional, defaults, *args, keyword-only, **kwargs)
+- Lambda functions (anonymous functions)
+- Lambda syntax: lambda parameters: expression
+- Single expression limitation in lambdas
+- Higher-order functions with lambdas
+- map() function for transformations
+- filter() function for selections
+- sorted() function with custom key
+- Functional programming patterns
+
+**Key Takeaways:**
+- *args collects extra positional arguments into a tuple
+- **kwargs collects keyword arguments into a dictionary
+- *args enables functions to accept any number of positional arguments
+- **kwargs enables functions to accept any number of keyword arguments
+- Can combine *args and **kwargs for maximum flexibility
+- Parameter order is strict: regular positional, defaults, *args, keyword-only, keyword defaults, **kwargs
+- Lambda creates anonymous one-line functions
+- Lambda syntax: lambda params: expression (single expression only)
+- Lambda automatically returns the expression result
+- Lambda perfect for short, simple operations
+- map(function, iterable) applies function to each element
+- filter(function, iterable) keeps elements where function returns True
+- sorted(iterable, key=function) sorts using custom key function
+- Lambda commonly used with map(), filter(), and sorted()
+- *args type is tuple - iterate with for loop
+- **kwargs type is dict - use .items(), .get(), .keys()
+- Functional programming enables elegant data pipelines
+- Higher-order functions accept functions as parameters
+- Use lambda for quick operations, regular functions for complex logic
+
+**Exercises Completed:** Created greet() with *args accepting any number of arguments, sum_of_numbers() summing variable arguments, greeting() combining required and *args parameters, print_all_keywords() demonstrating **kwargs, configure_hyperparameters() with defaults from **kwargs, combined_function() using both *args and **kwargs, multiple lambda examples (add, square, max, conditionals), map() with lambda to transform data, filter() with lambda to select data, sorted() with lambda key for custom sorting, gene expression filtering and sorting pipeline.
+
+**Practical Applications:** Built flexible logging function accepting any messages with metadata, created ML hyperparameter configuration accepting any settings, filtered high gene expression using lambda and filter(), sorted genes by expression level using lambda key, built data transformation pipeline combining map() and filter(), demonstrated functional programming patterns for data processing!
+
+[View Day 19 Details →](./day-19/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -730,4 +780,4 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **💾 File Handling Mastered! Data Persistence Achieved - Real-World Data Processing! 💾**
 
-*Last Updated: February 3, 2026*
+*Last Updated: February 4, 2026*
