@@ -31,8 +31,9 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 17: File Handling (Reading and Writing Files)
 - [x] Day 18: Exception Handling & Debugging
 - [x] Day 19: Advanced Functions (*args, **kwargs, Lambda)
+- [x] Day 20: Python Project Structure & Package Management
 - [ ] Object-Oriented Programming (OOP)
-
+      
 ### Phase 2: Intermediate Python
 - [ ] Decorators and Generators
 - [ ] List Comprehensions
@@ -83,10 +84,11 @@ python-journey-to-ai-ml/
 ├── Day-16-Modules/
 ├── Day-18-Exception-Handling/
 ├── Day-19-Advanced-Functions/
-│   ├── exercises.py
+├── Day-20-Project-Structure-Packages/
 │   ├── concepts.md
+│   ├── examples.py
 │   └── notes.md
-├── Day-20-.../
+├── Day-21-.../
 └── projects/
 ```
 
@@ -757,6 +759,58 @@ python-journey-to-ai-ml/
 
 [View Day 19 Details →](./day-19/concepts.md)
 
+---
+
+### Day 20: Python Project Structure & Package Management
+**Date:** February 5, 2026
+
+**Topics Covered:**
+- Modules vs Packages (key differences)
+- Creating Python packages (directory + __init__.py)
+- The __init__.py file (purpose, usage, public API)
+- Sub-packages (nested package structure)
+- Absolute imports (full path from project root)
+- Relative imports (dot notation: ., .., ...)
+- Virtual environments with venv (built-in)
+- Creating and activating virtual environments
+- Managing dependencies with requirements.txt
+- pip freeze for capturing dependencies
+- Installing from requirements.txt
+- setup.py for distributable packages
+- Professional project structure (src/ layout)
+- venv vs Conda (when to use each)
+- .gitignore for version control
+
+**Key Takeaways:**
+- Module = single .py file; Package = directory with __init__.py
+- __init__.py is what makes a directory a Python package
+- __init__.py executes when package is imported
+- __init__.py defines the public API of the package
+- Sub-packages are packages inside packages (nested directories)
+- Absolute imports use full path: from myproject.package.module import x
+- Relative imports use dots: from . import x (same dir), from .. import x (parent)
+- Absolute imports are recommended for clarity
+- Virtual environments isolate project dependencies completely
+- venv is built into Python 3 - no installation needed
+- Create venv: python -m venv venv
+- Activate on Linux/Mac: source venv/bin/activate
+- Activate on Windows: venv\Scripts\activate
+- pip freeze > requirements.txt saves exact versions
+- pip install -r requirements.txt recreates environment
+- requirements.txt enables reproducible environments
+- setup.py makes package installable with pip
+- Professional structure: src/, tests/, docs/, README.md, requirements.txt
+- Use venv for pure Python projects (lightweight)
+- Use Conda for scientific computing needing system libraries (CUDA, MKL)
+- Never commit virtual environment to git (.gitignore)
+- Always use virtual environments for projects
+
+**Exercises Completed:** Module vs package review (module1.py, main_program.py), created bioinformatics package structure with __init__.py, demonstrated sub-packages (io/, analysis/, utils/), showed absolute vs relative import patterns, complete virtual environment workflow, requirements.txt formats (pinned, minimum, range), complete gene_toolkit project structure with src/ layout.
+
+**Practical Applications:** Built complete gene_toolkit bioinformatics package structure with sub-packages for I/O, analysis, and utilities. Demonstrated professional __init__.py with version and public API. Created requirements.txt for bioinformatics dependencies. Showed complete project lifecycle: create, activate venv, install, freeze, commit, reproduce!
+
+[View Day 20 Details →](./day-20/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -778,6 +832,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**💾 File Handling Mastered! Data Persistence Achieved - Real-World Data Processing! 💾**
+**🏗️ Project Structure Mastered! Packages, venv, Dependencies - Professional Architecture! 🏗️**
 
-*Last Updated: February 4, 2026*
+*Last Updated: February 5, 2026*
