@@ -285,4 +285,74 @@ try:
 except ValueError as e:
     print(f"ValueError caught: {e}")
 
+######################## Speed: Python List vs NumPy Array #####################
+
+print("\n--- Speed Comparison: Python List vs NumPy ---")
+import time
+
+SIZE = 2000
+
+# Python for loop approach
+list_a = list(range(SIZE))
+list_b = list(range(SIZE))
+list_c = [0] * SIZE
+
+start_time = time.time()
+for i in range(SIZE):
+    list_c[i] = list_a[i] + list_b[i]
+end_time = time.time()
+python_time = end_time - start_time
+print(f"Python for loop time:  {python_time:.8f} seconds")
+
+# NumPy vectorized approach
+numpy_array_a = np.arange(SIZE)
+numpy_array_b = np.arange(SIZE)
+
+start_time = time.time()
+numpy_array_c = numpy_array_a + numpy_array_b
+end_time = time.time()
+numpy_time = end_time - start_time
+print(f"NumPy vectorized time: {numpy_time:.8f} seconds")
+
+# How many times faster?
+if numpy_time > 0:
+    speedup = python_time / numpy_time
+    print(f"NumPy is ~{speedup:.1f}x faster!")
+else:
+    print("NumPy is too fast to measure at this scale!")
+
+# Scale up to see bigger difference
+print("\n--- Larger Scale (1,000,000 elements) ---")
+SIZE_BIG = 1_000_000
+
+list_big_a = list(range(SIZE_BIG))
+list_big_b = list(range(SIZE_BIG))
+list_big_c = [0] * SIZE_BIG
+
+start_time = time.time()
+for i in range(SIZE_BIG):
+    list_big_c[i] = list_big_a[i] + list_big_b[i]
+python_big_time = time.time() - start_time
+print(f"Python loop (1M):  {python_big_time:.4f} seconds")
+
+np_big_a = np.arange(SIZE_BIG)
+np_big_b = np.arange(SIZE_BIG)
+
+start_time = time.time()
+np_big_c = np_big_a + np_big_b
+numpy_big_time = time.time() - start_time
+print(f"NumPy vector (1M): {numpy_big_time:.4f} seconds")
+
+if numpy_big_time > 0:
+    speedup_big = python_big_time / numpy_big_time
+    print(f"NumPy is ~{speedup_big:.0f}x faster at 1M elements!")
+
+print("""
+Key Takeaway:
+- Python loop: each element processed one at a time (interpreted)
+- NumPy vector: ALL elements processed at once (C backend, SIMD)
+- Difference grows larger with bigger arrays
+- This is WHY NumPy is essential for data science & AI/ML!
+""")
+
 print("\n--- Day 21 Complete! NumPy Foundation Built! ---")
