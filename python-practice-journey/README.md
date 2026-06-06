@@ -32,29 +32,19 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 18: Exception Handling & Debugging
 - [x] Day 19: Advanced Functions (*args, **kwargs, Lambda)
 - [x] Day 20: Python Project Structure & Package Management
-- [ ] Object-Oriented Programming (OOP)
-      
-### Phase 2: Intermediate Python
-- [ ] Decorators and Generators
-- [ ] List Comprehensions
-- [ ] Lambda Functions
-- [ ] Regular Expressions
-- [ ] Working with APIs
-- [ ] Virtual Environments
 
-### Phase 3: Data Analysis & Visualization
-- [ ] NumPy
-- [ ] Pandas
+### Phase 2: Data Analysis & Visualization
+- [x] Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting- [ ] Pandas
 - [ ] Matplotlib & Seaborn
 - [ ] Data Cleaning & Preprocessing
 
-### Phase 4: Machine Learning Basics
+### Phase 3: Machine Learning Basics
 - [ ] Scikit-learn
 - [ ] Supervised Learning (Regression, Classification)
 - [ ] Unsupervised Learning (Clustering, Dimensionality Reduction)
 - [ ] Model Evaluation & Validation
 
-### Phase 5: Deep Learning & AI
+### Phase 4: Deep Learning & AI
 - [ ] Neural Networks Fundamentals
 - [ ] TensorFlow/Keras or PyTorch
 - [ ] Computer Vision
@@ -85,10 +75,11 @@ python-journey-to-ai-ml/
 ├── Day-18-Exception-Handling/
 ├── Day-19-Advanced-Functions/
 ├── Day-20-Project-Structure-Packages/
+├── Day-21-NumPy-Introduction/
+│   ├── exercises.py
 │   ├── concepts.md
-│   ├── examples.py
 │   └── notes.md
-├── Day-21-.../
+├── Day-22-.../
 └── projects/
 ```
 
@@ -811,6 +802,55 @@ python-journey-to-ai-ml/
 
 [View Day 20 Details →](./day-20/concepts.md)
 
+---
+
+## 🔢 Phase 2: Scientific Computing & Data Analysis
+
+### Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting
+**Date:** February 6, 2026 | **Week 5, Day 1** 🎉
+
+**Topics Covered:**
+- Why NumPy (speed, memory, vectorization vs Python lists)
+- Creating 1D and 2D arrays from Python lists
+- Specifying dtype (float, int16, complex)
+- Built-in creation functions: zeros, ones, full, eye, arange, linspace
+- Random arrays: rand, randn, randint
+- arange vs linspace (step vs count)
+- Array attributes: ndim, shape, size, dtype, itemsize, nbytes
+- 1D indexing (positive and negative)
+- 2D indexing (row, col syntax)
+- 1D and 2D slicing (all patterns)
+- Slices are VIEWS not copies (.copy() for independence)
+- Element-wise arithmetic (+, -, *, /, **)
+- Scalar broadcasting in arithmetic
+- Comparison operators (return boolean arrays)
+- Universal functions: sin, cos, exp, log, log10, sqrt
+- Aggregation: sum, min, max, mean, std, var, median
+- np.median() vs arr.median() (no array method!)
+- axis parameter: axis=0 (down columns), axis=1 (across rows)
+- Broadcasting rules and examples
+- Incompatible shapes → ValueError (handled with try-except)
+
+**Key Takeaways:**
+- NumPy is 10-100x faster than Python lists (C backend, vectorized)
+- Arrays are homogeneous - all elements same dtype
+- Vectorized operations eliminate for loops
+- np.array() creates array from list; shape attribute shows dimensions
+- arange(start, stop, step) like Python range; linspace(start, stop, count) for n points
+- ndim=dimensions, shape=(rows,cols), size=total elements, dtype=element type
+- Slices are VIEWS - modifying slice modifies original! Use .copy()
+- All arithmetic is element-wise by default
+- np.median(arr) ONLY - there is no arr.median() method!
+- axis=0 operates down columns (collapses rows); axis=1 operates across rows (collapses columns)
+- Broadcasting: dimensions compatible if equal or one is 1
+- NumPy is the foundation of pandas, scikit-learn, TensorFlow, PyTorch
+
+**Exercises Completed:** Created 1D/2D arrays, all creation functions, attribute inspection, 1D/2D indexing and modification, all slicing patterns, observed view behavior, element-wise arithmetic, ufuncs, all aggregation functions with and without axis, 2D axis operations, broadcasting examples (scalar, row vector, column vector), incompatible shape error handling.
+
+**Practical Applications:** Gene expression matrix (mean per gene/sample, high-expression filtering), methylation data statistics (hypermethylated/hypomethylated sites), vectorized normalization (no loops!), boolean indexing for data filtering. **This is the foundation of MethylGraph-AI!**
+
+[View Day 21 Details →](./day-21/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -832,6 +872,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🏗️ Project Structure Mastered! Packages, venv, Dependencies - Professional Architecture! 🏗️**
+**🔢 WEEK 5 STARTED! Scientific Computing - NumPy Foundation Built! 🔢**
 
-*Last Updated: February 5, 2026*
+*Last Updated: February 6, 2026*
