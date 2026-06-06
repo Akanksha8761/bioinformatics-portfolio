@@ -34,7 +34,8 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 20: Python Project Structure & Package Management
 
 ### Phase 2: Data Analysis & Visualization
-- [x] Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting- [ ] Pandas
+- [x] Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting
+- [ ] Pandas
 - [ ] Matplotlib & Seaborn
 - [ ] Data Cleaning & Preprocessing
 
