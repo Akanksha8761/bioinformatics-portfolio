@@ -35,6 +35,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 
 ### Phase 2: Data Analysis & Visualization
 - [x] Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting
+- [x] Day 22: NumPy Advanced - Reshape, Masking, Stacking, File I/O, Linear Algebra
 - [ ] Pandas
 - [ ] Matplotlib & Seaborn
 - [ ] Data Cleaning & Preprocessing
@@ -77,10 +78,11 @@ python-journey-to-ai-ml/
 ├── Day-19-Advanced-Functions/
 ├── Day-20-Project-Structure-Packages/
 ├── Day-21-NumPy-Introduction/
+├── Day-22-NumPy-Advanced/
 │   ├── exercises.py
 │   ├── concepts.md
 │   └── notes.md
-├── Day-22-.../
+├── Day-23-.../
 └── projects/
 ```
 
@@ -852,6 +854,60 @@ python-journey-to-ai-ml/
 
 [View Day 21 Details →](./day-21/concepts.md)
 
+---
+
+### Day 22: NumPy Advanced - Reshape, Masking, Stacking, File I/O, Linear Algebra
+**Date:** February 7, 2026 | **Week 5, Day 2**
+
+**Topics Covered:**
+- Reshaping arrays (2D, 3D, the -1 inference trick)
+- Compatible reshape rules (total elements must match)
+- Flattening: ravel() returns VIEW, flatten() returns COPY
+- Flatten ordering: row-major ('C') vs column-major ('F')
+- Boolean array masking (condition-based filtering)
+- Compound conditions using & (AND), | (OR), ~ (NOT)
+- Modifying arrays in-place with boolean indexing
+- Boolean indexing on 2D arrays
+- vstack / row_stack (adds rows)
+- hstack (concatenates flat for 1D, adds columns for 2D)
+- column_stack (treats 1D arrays as columns of a 2D matrix)
+- concatenate with axis parameter (most general)
+- hsplit, vsplit, split (with count and index-based splitting)
+- File I/O: np.save / np.load (.npy binary, single array)
+- File I/O: np.savez / np.load (.npz archive, multiple arrays)
+- File I/O: np.savetxt / np.loadtxt (CSV/text files)
+- Handling missing data: genfromtxt and nan_to_num
+- Linear algebra: dot product, matrix multiplication (@)
+- Transpose (.T), inverse (linalg.inv), determinant (linalg.det)
+- Eigenvalues and eigenvectors (linalg.eig)
+- Matrix rank (linalg.matrix_rank)
+- Trace (np.trace - sum of diagonal)
+
+**Key Takeaways:**
+- reshape total elements must match: 3×5=15 ≠ 20 → ValueError
+- Use -1 in reshape to let NumPy infer that dimension automatically
+- reshape returns a VIEW - modifying it changes the original!
+- ravel() returns a VIEW (fast, memory efficient, modifies original)
+- flatten() always returns a COPY (safe, independent)
+- Boolean masking: use & | ~ NOT Python's and/or/not
+- Parentheses required: (arr > 3) & (arr < 7)
+- vstack adds rows, hstack for 2D adds columns
+- column_stack turns 1D arrays into columns (not flat concatenation!)
+- .npy = fast binary for single arrays
+- .npz = dictionary-like archive for multiple named arrays
+- Always close .npz files with loaded.close()
+- genfromtxt handles missing values (NaN) gracefully
+- nan_to_num replaces NaN with specified value
+- @ operator for matrix multiplication, * for element-wise
+- Matrix rank reveals linear dependence of rows/columns
+- Eigenvalues/eigenvectors critical for PCA and dimensionality reduction
+
+**Exercises Completed:** All reshape patterns including -1, ravel vs flatten comparison, boolean masking with simple and compound conditions, 2D masking and in-place modification, vstack/hstack/column_stack/concatenate for 1D and 2D, hsplit/vsplit/split with count and index arrays, save/load .npy single array, save/load .npz multiple named arrays, savetxt/loadtxt CSV, genfromtxt with missing values, nan_to_num, complete linear algebra suite.
+
+**Practical Applications:** Gene expression filtering with boolean masks (no loops!), dataset save/load with .npz for complete experiments, neural network weight operations with @, PCA foundation with eigenvalue decomposition, reshape for ML pipelines (images to feature vectors), bioinformatics data persistence.
+
+[View Day 22 Details →](./day-22/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -873,6 +929,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🔢 WEEK 5 STARTED! Scientific Computing - NumPy Foundation Built! 🔢**
+**🔢 WEEK 5 IN PROGRESS! Scientific Computing - NumPy Fully Mastered! 🔢**
 
-*Last Updated: February 6, 2026*
+*Last Updated: February 7, 2026*
