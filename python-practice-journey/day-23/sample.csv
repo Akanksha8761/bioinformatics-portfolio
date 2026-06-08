@@ -1,0 +1,6 @@
+Gene	Sample1_Expr	Sample2_Expr	Sample3_Expr	Chromosome	Is_Tumor_Suppressor
+BRCA1	120.5	110.2	130	chr17	TRUE
+TP53	80.1	95.5	75.3	chr17	TRUE
+MYC	500.7	610.1	480.9	chr8	FALSE
+EGFR	300	280.5	320.6	chr7	FALSE
+PTEN	90.6	85.2	92.3	chr10	TRUE
