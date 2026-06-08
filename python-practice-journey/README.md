@@ -36,7 +36,8 @@ This is a personal learning log where I track my daily progress, code exercises,
 ### Phase 2: Data Analysis & Visualization
 - [x] Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting
 - [x] Day 22: NumPy Advanced - Reshape, Masking, Stacking, File I/O, Linear Algebra
-- [ ] Pandas
+- [x] Day 23: Pandas Introduction - Series, DataFrames, Indexing, CSV Loading
+- [ ] Pandas Data Manipulation - Cleaning, Grouping, Merging
 - [ ] Matplotlib & Seaborn
 - [ ] Data Cleaning & Preprocessing
 
@@ -79,10 +80,12 @@ python-journey-to-ai-ml/
 ├── Day-20-Project-Structure-Packages/
 ├── Day-21-NumPy-Introduction/
 ├── Day-22-NumPy-Advanced/
+├── Day-23-Pandas-Introduction/
 │   ├── exercises.py
 │   ├── concepts.md
-│   └── notes.md
-├── Day-23-.../
+│   ├── notes.md
+│   └── sample.csv
+├── Day-24-.../
 └── projects/
 ```
 
@@ -908,6 +911,58 @@ python-journey-to-ai-ml/
 
 [View Day 22 Details →](./day-22/concepts.md)
 
+---
+
+### Day 23: Pandas Introduction - Series, DataFrames, Indexing, CSV
+**Date:** February 8, 2026 | **Week 5, Day 3**
+
+**Topics Covered:**
+- What is Pandas (tabular data on top of NumPy)
+- Pandas Series (1D labelled array)
+- Creating Series (from list, NumPy, dict, with custom index and name)
+- Missing keys in dict Series → NaN automatically
+- Series attributes (values, index, dtype, shape, ndim, size, name, hasnans)
+- Series indexing: .loc[] for labels, .iloc[] for positions
+- Label slicing is INCLUSIVE at both ends (unique to pandas!)
+- Position slicing is EXCLUSIVE at end (like Python/NumPy)
+- Vectorized operations on Series (arithmetic, NumPy ufuncs)
+- Boolean filtering on Series
+- .get() for safe label access (avoids KeyError)
+- Pandas DataFrame (2D labelled table)
+- Creating DataFrames (dict of lists, list of dicts, 2D NumPy, dict of Series)
+- Missing keys in list-of-dicts → NaN per cell
+- DataFrame attributes (shape, index, columns, dtypes, values, ndim, size)
+- DataFrame inspection (head, tail, info, describe)
+- describe(include='all') for mixed data types
+- Selecting single column → Series, multiple columns → DataFrame
+- Attribute access for column selection (df.ColName)
+- .loc[] for label-based row and column selection
+- .iloc[] for integer position-based row and column selection
+- Boolean indexing on DataFrames (filter rows)
+- pd.read_csv() with common parameters
+
+**Key Takeaways:**
+- Series = 1D labelled array (NumPy array + named index)
+- DataFrame = 2D labelled table (dict of Series sharing index)
+- Always use .iloc for position, .loc for labels (never mix!)
+- Label slicing s['a':'c'] includes 'c' - INCLUSIVE end
+- Position slicing s[:3] excludes index 3 - EXCLUSIVE end
+- s[1] with string index raises KeyError - use s.iloc[1]
+- Single bracket df['Age'] returns Series
+- Double brackets df[['Age']] returns DataFrame
+- df[condition] filters rows, df['col'] selects column
+- .loc[rows, cols] allows simultaneous row and column selection
+- Missing keys in creation → NaN (Pandas handles messy real data)
+- pd.read_csv() loads any tabular data in one line
+- index_col parameter turns a column into the row index
+- info() shows structure, describe() shows statistics
+
+**Exercises Completed:** All Series creation methods, Series attributes inspection, .loc/.iloc indexing, inclusive vs exclusive slicing, vectorized operations, boolean filtering, .get() safe access, all DataFrame creation methods, DataFrame attributes, head/tail/info/describe, single and multiple column selection, .loc and .iloc row/column selection, boolean indexing with .loc, pd.read_csv() with index_col.
+
+**Practical Applications:** Gene expression Series with named index, patient metadata DataFrame with custom row labels, clinical filtering (age, metastasis), gene expression CSV loading and analysis, chromosome filtering, tumor suppressor identification.
+
+[View Day 23 Details →](./day-23/concepts.md)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -929,6 +984,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🔢 WEEK 5 IN PROGRESS! Scientific Computing - NumPy Fully Mastered! 🔢**
+**🔢 WEEK 5 IN PROGRESS! NumPy Mastered, Pandas Started! 🐼**
 
-*Last Updated: February 7, 2026*
+*Last Updated: February 8, 2026*
