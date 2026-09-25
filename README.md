@@ -51,7 +51,7 @@ I hold an M.Sc. in Human Genomics and a B.Sc. (Hons) in Bioinformatics, both fro
 | [**1. RNA-Seq Analysis Pipeline**](./01_RNA-Seq_Analysis/) | `RNA-Seq`, `DESeq2`, `STAR`, `FastQC`, `Shell Scripting`, `R` | A complete differential gene expression analysis pipeline, from raw FASTQ QC and alignment to functional annotation. |
 | [**2. Variant Analysis in a Rare Disease**](./02_Variant_Analysis_EB/) | `Variant Interpretation`, `VCF`, `SIFT`, `PolyPhen2`, `DynaMut` | Analysis of missense mutations in *KRT5*/*KRT14* genes to understand their role in Epidermolysis Bullosa Simplex. *(Basis for my publication)* |
 | [**3. De Novo Genome Assembly**](./03_DeNovo_Assembly/) | `De Novo Assembly`, `Genome Annotation`, `FastQC`, `GeneMark` | Assembly and annotation of four isolates of *Neisseria sicca* from raw next-generation sequencing reads. |
-| [**4. Machine Learning for Genomics**](./04_ML_Genomics/) | `Python`, `Scikit-learn`, `PyTorch`, `Knowledge Graphs` | Schema design and integration of diverse genomic data from multiple sources using text mining and NLP techniques, completed during an internship at IISER, Bhopal. |
+| [**4. Machine Learning for Genomics**](./python-practice-journey/) | `Python`, `Scikit-learn`, `PyTorch`, `Knowledge Graphs` | Schema design and integration of diverse genomic data from multiple sources using text mining and NLP techniques, completed during an internship at IISER, Bhopal. |
 
 ---
 
