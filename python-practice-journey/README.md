@@ -37,6 +37,7 @@ This is a personal learning log where I track my daily progress, code exercises,
 - [x] Day 21: NumPy Introduction - Arrays, Indexing, Arithmetic, Broadcasting
 - [x] Day 22: NumPy Advanced - Reshape, Masking, Stacking, File I/O, Linear Algebra
 - [x] Day 23: Pandas Introduction - Series, DataFrames, Indexing, CSV Loading
+- [x] Day 24: Pandas Advanced - Missing Data, Cleaning, GroupBy, Concat, Merge
 - [ ] Pandas Data Manipulation - Cleaning, Grouping, Merging
 - [ ] Matplotlib & Seaborn
 - [ ] Data Cleaning & Preprocessing
@@ -81,11 +82,10 @@ python-journey-to-ai-ml/
 ├── Day-21-NumPy-Introduction/
 ├── Day-22-NumPy-Advanced/
 ├── Day-23-Pandas-Introduction/
+├── Day-24-Pandas-Advanced/
 │   ├── exercises.py
 │   ├── concepts.md
-│   ├── notes.md
-│   └── sample.csv
-├── Day-24-.../
+│   └── notes.md
 └── projects/
 ```
 
@@ -963,6 +963,53 @@ python-journey-to-ai-ml/
 
 [View Day 23 Details →](./day-23/concepts.md)
 
+---
+
+### Day 24: Pandas Advanced - Missing Data, Cleaning, GroupBy, Merge
+**Date:** February 9, 2026 | **Week 5, Day 4**
+
+**Topics Covered:**
+- Detecting missing values: isnull(), notnull(), sum()
+- dropna(): axis, how='all', thresh parameter
+- fillna(): constant, column mean, per-column dict
+- Forward fill (ffill) and backward fill (bfill) with limit
+- Data type conversion with astype() (float, str, int, category)
+- 'category' dtype for memory-efficient repeated strings
+- Detecting duplicates: duplicated() with keep='first'/'last'/False
+- Removing duplicates: drop_duplicates() with subset and keep
+- apply() on columns (axis=0) and rows (axis=1)
+- Element-wise operations: map()/applymap() on DataFrames
+- Series.map() with function and dictionary substitution
+- Value replacement: replace() single, list, dict
+- Sorting: sort_index() and sort_values() (single and multi-column)
+- GroupBy Split-Apply-Combine pattern
+- groupby() with single and multiple columns
+- Aggregation: mean, sum, count, size, min, max, std
+- .agg() for multiple and custom per-column aggregations
+- Iterating through group objects
+- pd.concat() row-wise (axis=0), column-wise (axis=1)
+- ignore_index=True to reset index after concat
+- pd.merge() INNER, OUTER, LEFT, RIGHT joins
+- Multi-key merge, index-based merge
+
+**Key Takeaways:**
+- dropna(thresh=n) is smarter than plain dropna() — keeps rows with enough data
+- ffill/bfill are preferred over fillna(method=) in pandas ≥ 2.0
+- 'category' dtype saves memory when few unique string values
+- apply(axis=0) sees each column as Series, apply(axis=1) sees each row
+- groupby follows Split→Apply→Combine (same concept as MapReduce!)
+- .agg(dict) enables different aggregations per column simultaneously
+- pd.concat stacks DataFrames; pd.merge joins on keys (SQL-style)
+- INNER keeps matching rows, OUTER keeps all with NaN for missing, LEFT/RIGHT keep one side
+- Multi-key merge on ['key1','key2'] ensures uniqueness by combination
+- inplace=True modifies original; returning and reassigning is more explicit
+
+**Exercises Completed:** Complete missing data toolkit (detect, drop, fill), type conversion (float/str/int/category), duplicate detection and removal (all keep options), apply on cols and rows, applymap/map with lambda and dict, replace (single/list/dict), sort_index and sort_values (multi-column), groupby single and multi with all aggregations, custom .agg() dict, group iteration, pd.concat (rows/cols/ignore_index), pd.merge (all 4 join types, multi-key, index-based).
+
+**Practical Applications:** Complete methylation analysis pipeline — load, detect/fill missing, drop duplicates, groupby chromosome for statistics, merge with gene annotations, sort by methylation level. This is the FULL data science workflow!
+
+[View Day 24 Details →](./day-24/concepts.md/)
+
 ## 💡 Resources
 
 - [Python Official Documentation](https://docs.python.org/)
@@ -984,6 +1031,6 @@ This is a learning journey, and mistakes are part of the process. Each day build
 
 **Happy Coding! 🚀**
 
-**🔢 WEEK 5 IN PROGRESS! NumPy Mastered, Pandas Started! 🐼**
+**🐼 PANDAS MASTERED! Series, DataFrames, Advanced Cleaning, GroupBy, Merge! 🐼**
 
-*Last Updated: February 8, 2026*
+*Last Updated: February 9, 2026*
